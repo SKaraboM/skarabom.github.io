@@ -27,9 +27,9 @@ const Main = () => {
                         </button>
                     </div>
                     <ul className="flex-row md:flex md:static md:flex-row md:items-center hidden">
-                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md ">Projects</li>
+                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md">Projects</li>
                         <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md">Contact Me</li>
-                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md">Download CV</li>
+                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 hover:text-black px-6 py-2 rounded-md">Download CV</li>
                     </ul>
                     {menuOpen && (
                         <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white absolute right-0 top-20 w-40 shadow-lg md:hidden z-50">
@@ -43,7 +43,7 @@ const Main = () => {
             </div>
             <div className="body" class=" text-gray-500 dark:text-white w-4/5 md:justify-between md:items-center mx-auto text-lg">
                 <p class="mt-10 md:mt-40 mb-5">Hi, I am</p>
-                <h1 class="mb-5 text-6xl md:text-8xl">Solomon Makgoba</h1>
+                <h1 class="mb-5 text-6xl md:text-8xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text">Solomon Makgoba</h1>
                     <p>
                         consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
