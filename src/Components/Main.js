@@ -27,9 +27,9 @@ const Main = () => {
                         </button>
                     </div>
                     <ul className="flex-row md:flex md:static md:flex-row md:items-center hidden">
-                        <li className="mx-2 my-auto md:mx-8">Projects</li>
-                        <li className="mx-2 my-auto md:mx-8">Contact Me</li>
-                        <li className="mx-2 my-auto md:mx-8">Download CV</li>
+                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md ">Projects</li>
+                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md">Contact Me</li>
+                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md">Download CV</li>
                     </ul>
                     {menuOpen && (
                         <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white absolute right-0 top-20 w-40 shadow-lg md:hidden z-50">
@@ -41,13 +41,16 @@ const Main = () => {
                 </div>
                 
             </div>
-            <div className="body" class=" text-gray-500 dark:text-white w-4/5 flex flex-col md:flex-row md:justify-between md:items-center mx-auto my-10">
-                <p >Lorem ipsum dolor sit amet, 
-                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <div className="body" class=" text-gray-500 dark:text-white w-4/5 md:justify-between md:items-center mx-auto text-lg">
+                <p class="mt-10 md:mt-40 mb-5">Hi, I am</p>
+                <h1 class="mb-5 text-6xl md:text-8xl">Solomon Makgoba</h1>
+                    <p>
+                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
             </div>
         </div>
     );
