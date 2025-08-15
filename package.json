@@ -12,6 +12,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+   "homepage": "https://skarabom.github.io/skarabom.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -40,6 +41,5 @@
   },
   "devDependencies": {
     "gh-pages": "^6.3.0"
-  },
-   "homepage": "https://github.com/SKaraboM/skarabom.github.io.git"
+  }
 }
