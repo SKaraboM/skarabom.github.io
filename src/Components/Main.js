@@ -7,7 +7,7 @@ const Main = () => {
         <div class="bg-white dark:bg-black">
             <div class="relative bg-white dark:bg-black text-black dark:text-white font-[family-name: Supreme] flex flex-col md:items-center" >
                 <div className="NavBar" class="flex justify-between h-20 bg-white dark:bg-black text-black dark:text-white min-w-100 lg:w-4/5 md:my-auto">
-                    <ul class="my-auto mx-2 md:mx-5">
+                    <ul class="my-auto">
                         <li>
                             <span class="flex flex-row">
                                 <img src={Logo} alt="icon" class="h-10"/>
@@ -27,12 +27,12 @@ const Main = () => {
                         </button>
                     </div>
                     <ul className="flex-row md:flex md:static md:flex-row md:items-center hidden">
-                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md">Projects</li>
-                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-6 py-2 rounded-md">Contact Me</li>
-                        <li className="w-40 border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 hover:text-black px-6 py-2 rounded-md">Download CV</li>
+                        <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-4 py-2 rounded-md">Projects</li>
+                        <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-4 py-2 rounded-md">Contact Me</li>
+                        <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 hover:text-white px-4 py-2 rounded-md">Download CV</li>
                     </ul>
                     {menuOpen && (
-                        <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white absolute right-0 top-20 w-40 shadow-lg md:hidden z-50">
+                        <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white text-sm absolute right-0 top-20 w-40 shadow-lg md:hidden z-50">
                             <li className="px-4 py-2">Projects</li>
                             <li className="px-4 py-2">Contact Me</li>
                             <li className="px-4 py-2">Download CV</li>
