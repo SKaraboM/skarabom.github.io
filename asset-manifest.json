@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.69f45b10.css",
-    "main.js": "/static/js/main.9a23e3ec.js",
-    "static/js/453.44c56d99.chunk.js": "/static/js/453.44c56d99.chunk.js",
-    "static/media/Supreme-Light.woff": "/static/media/Supreme-Light.d040aea3bac5bd5e4a15.woff",
-    "static/media/favicon.png": "/static/media/favicon.9d7724bce79fa30140c7.png",
-    "index.html": "/index.html",
-    "main.69f45b10.css.map": "/static/css/main.69f45b10.css.map",
-    "main.9a23e3ec.js.map": "/static/js/main.9a23e3ec.js.map",
-    "453.44c56d99.chunk.js.map": "/static/js/453.44c56d99.chunk.js.map"
+    "main.css": "/skarabom.github.io/static/css/main.59a2c97e.css",
+    "main.js": "/skarabom.github.io/static/js/main.c8257100.js",
+    "static/js/453.44c56d99.chunk.js": "/skarabom.github.io/static/js/453.44c56d99.chunk.js",
+    "static/media/Supreme-Light.woff": "/skarabom.github.io/static/media/Supreme-Light.d040aea3bac5bd5e4a15.woff",
+    "static/media/favicon.png": "/skarabom.github.io/static/media/favicon.9d7724bce79fa30140c7.png",
+    "index.html": "/skarabom.github.io/index.html",
+    "main.59a2c97e.css.map": "/skarabom.github.io/static/css/main.59a2c97e.css.map",
+    "main.c8257100.js.map": "/skarabom.github.io/static/js/main.c8257100.js.map",
+    "453.44c56d99.chunk.js.map": "/skarabom.github.io/static/js/453.44c56d99.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69f45b10.css",
-    "static/js/main.9a23e3ec.js"
+    "static/css/main.59a2c97e.css",
+    "static/js/main.c8257100.js"
   ]
 }
