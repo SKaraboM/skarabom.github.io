@@ -42,15 +42,39 @@ const Main = () => {
                 
             </div>
             <div className="body" class=" text-gray-500 dark:text-white w-4/5 md:justify-between md:items-center mx-auto text-lg">
-                <p class="mt-10 md:mt-40 mb-5">Hi, I am</p>
-                <h1 class="mb-5 text-6xl md:text-8xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text">Solomon Makgoba</h1>
-                    <p>
-                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                <div class="mb-10 md:mb-20">
+                    <p class="mt-10 md:mt-36 mb-5">Hi, I am</p>
+                    <h1 class="mb-5 text-5xl md:text-8xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text">Solomon Makgoba</h1>
+                    <p class="text-sm md:text-xl">
+                        A Junior Software Developer with a passion for building smart, practical, and innovative solutions. 
+                        My journey has taken me from transforming Figma designs into interactive web apps to integrating 
+                        AI-powered computer vision into security systems at BMW Group SA.           
+                        With skills spanning Python, JavaScript, React, AWS, and AI frameworks, 
+                        I enjoy creating tools that make life easier, businesses smarter, and systems more secure. 
+                        I thrive in collaborative environments, but I’m equally driven when exploring new technologies and pushing myself to grow.
+                    <br />
+                    <br />
+                        What excites me most about tech is its power to shape the future—and I’m here to be part of that future by crafting solutions that are impactful, scalable, and human-centered.
+                        I am always eager to learn and adapt, and I believe that my diverse skill set allows me to tackle challenges from multiple angles.
                     </p>
+                </div>
+                
+                <div className="hidden md:flex md:flex-col">
+                    <h4 class="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-4">EXPERIENCE: </h4>
+                    <div class="mb-10">
+                        <ul className="flex-row md:flex md:static md:flex-row md:items-center hidden">
+                            <li className="w-48 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-4 py-3 rounded-md">BMW Group SA</li>
+                            <li className="w-48 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-4 py-3 rounded-md">University Of Johannesburg</li>
+                            <li className="w-48 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-4 py-3 rounded-md">University Of Johannesburg</li>
+                        </ul>
+                    </div>
+                    <div class="mb-10 ml-5">
+                        <h1>Role</h1>
+                        <p>Start Date - End Date</p>
+                        <p>Company - location</p>
+                        <p>Role and responsibilities</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
