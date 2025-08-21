@@ -27,9 +27,9 @@ const Main = () => {
                     </button>
                 </div>
                 <ul className="flex-row md:flex md:static md:flex-row md:items-center hidden">
-                    <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-4 py-2 rounded-md">Projects</li>
-                    <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-white hover:text-black px-4 py-2 rounded-md">Contact Me</li>
-                    <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 hover:text-white px-4 py-2 rounded-md">Download CV</li>
+                    <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white hover:cursor-pointer px-4 py-2 rounded-md">Projects</li>
+                    <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white hover:cursor-pointer px-4 py-2 rounded-md">Contact Me</li>
+                    <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 hover:cursor-pointer hover:text-white px-4 py-2 rounded-md">Download CV</li>
                 </ul>
                 {menuOpen && (
                     <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white text-sm absolute right-0 top-20 w-40 shadow-lg md:hidden z-50">
@@ -41,9 +41,9 @@ const Main = () => {
             </div>
             <div className="body" class=" text-gray-500 dark:text-white  w-5/6 md:justify-between md:items-center mx-auto text-lg">
                 <div class="mb-10 md:mb-20">
-                    <p class="mt-5 md:mt-10 mb-5">Hello, I am</p>
-                    <h1 class="mb-5 text-4xl md:text-7xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text py-5">Solomon Makgoba</h1>
-                    <p class="text-sm md:text-xl">
+                    <p class="mt-5 md:mb-2 md:mt-10 text-xs md:text-xl">Hello, I am</p>
+                    <h1 class="text-3xl md:mb-5  md:text-7xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text py-5">Solomon Makgoba</h1>
+                    <p class="text-xs md:text-xl">
                         A Junior Software Developer with a passion for building smart, practical, and innovative solutions. 
                         My journey has taken me from transforming Figma designs into interactive web apps to integrating 
                         AI-powered computer vision into security systems at BMW Group SA.           
@@ -63,27 +63,27 @@ const Main = () => {
                         <ul className="flex-row md:flex md:static md:flex-row hidden ">
                             <li onClick={() => {setActiveCompany(0)}} className={`w-52 text-xs text-center md:mr-2 px-4 py-3 rounded-md cursor-pointer transition-all duration-200 ${
                                 activeCompany === 0 
-                                    ? 'bg-white text-black border-transparent' 
+                                    ? 'bg-black dark:bg-white text-white dark:text-black border-transparent' 
                                     : 'border-gray-500 dark:border-white hover:bg-white hover:text-black'
                             }`}>BMW Group SA</li>
                             <li onClick={() => {setActiveCompany(1)}} className={`w-52 text-xs text-center md:mx-2 px-4 py-3 rounded-md cursor-pointer transition-all duration-200 ${
                                 activeCompany === 1 
-                                    ? 'bg-white text-black border-transparent' 
+                                    ? 'bg-black dark:bg-white text-white dark:text-black border-transparent' 
                                     : 'border-gray-500 dark:border-white hover:bg-white hover:text-black'
                             }`}>University Of Johannesburg 1</li>
                             <li onClick={() => {setActiveCompany(2)}} className={`w-52 text-xs text-center md:mx-2 px-4 py-3 rounded-md cursor-pointer transition-all duration-200 ${
                                 activeCompany === 2 
-                                    ? ' bg-white text-black border-transparent' 
+                                    ? 'bg-black dark:bg-white text-white dark:text-black border-transparent' 
                                     : 'border-gray-500 dark:border-white hover:bg-white hover:text-black'
                             }`}>University Of Johannesburg 2</li>
                         </ul>
                     </div>
                     {activeCompany === 0 ? (
-                            <div class="mb-20">
-                                <p class="text-4xl mb-3">Graduate Software Developer</p>
-                                <span class="flex justify-between text-sm text-blue-500  mb-3">
-                                    <p>BMW Group South Africa - Pretoria</p>
-                                    <p>01 Feb 2024 - Present</p>
+                        <div class="mb-52">
+                            <p class="text-4xl mb-3">Graduate Software Developer</p>
+                            <span class="flex justify-between text-sm text-blue-500 mb-3">
+                                <p>BMW Group South Africa - Pretoria</p>
+                                <p>01 Feb 2024 - Present</p>
                             </span>
                             <p>
                                 Responsible for innovation and digitalization in the security department at BMW Plant Rosslyn:<br/>
@@ -91,11 +91,12 @@ const Main = () => {
                                 CCTV surveillance systems.<br/>
                                 Various mobile applications and web applications for digitalization within the security department.
                             </p>
-                        </div>) : activeCompany === 1 ? 
+                        </div>
+                        ) : activeCompany === 1 ? 
                         (
-                            <div class="mb-20">
+                            <div class="mb-52">
                                 <p class="text-4xl mb-3">Development Software A1 Tutor</p>
-                                <span class="flex justify-between  text-sm text-blue-500  mb-3">
+                                <span class="flex justify-between  text-sm text-blue-500 mb-3">
                                     <p>University Of Johannesburg - Johannesburg</p>
                                     <p>01 Jul 2023 - 31 Dec 2023</p>
                                 </span>
@@ -105,7 +106,7 @@ const Main = () => {
                                 </p>
                             </div>
                         ) : (
-                            <div class="mb-20">
+                            <div class="mb-52">
                                 <p class="text-4xl mb-3">Student Front End Developer</p>
                                 <span class="flex justify-between  text-sm text-blue-500 mb-3">
                                     <p>University Of Johannesburg - Johannesburg</p>
@@ -118,7 +119,41 @@ const Main = () => {
                             </div>
                         ) 
                     }
-                   
+                    
+                </div>
+                <div class="md:hidden flex flex-col">
+                    <h4 class="text-md bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-5">Experience</h4>
+                     <div class="mb-10 border-r border-b rounded-xl border-gray-300 dark:border-gray-700 p-5">
+                        <p class="text-2xl mb-3">Graduate Software Developer</p>
+                        <p class="text-xs text-blue-500">BMW Group South Africa - Pretoria</p>
+                        <p class="text-xs mb-3">01 Feb 2024 - Present</p>
+                        <p class="text-xs mb-3">
+                            Responsible for innovation and digitalization in the security department at BMW Plant Rosslyn:<br/>
+                            Worked on computer vision AI development and integration to
+                            CCTV surveillance systems.<br/>
+                            Various mobile applications and web applications for digitalization within the security department.
+                        </p>
+                    </div>
+                    <div class="mb-10 border-r border-b rounded-xl border-gray-300 dark:border-gray-700 p-5">
+                        <p class="text-2xl mb-3">Development Software A1 Tutor</p>
+                        <p class="text-xs text-blue-500">University Of Johannesburg - Johannesburg</p>
+                        <p class="text-xs mb-3">01 Jul 2023 - 31 Dec 2023</p>
+                        <p class="text-xs mb-3">
+                            Teaching and guiding individuals in learning and understanding basic programming concepts, with a
+                            focus on Object-Oriented Programming (OOP) concepts in Python and
+                            C#.
+                        </p>
+                    </div>
+                    <div class="mb-10 border-r border-b rounded-xl border-gray-300 dark:border-gray-700 p-5">
+                        <p class="text-2xl mb-3">Student Front End Developer</p>
+                        <p class="text-xs text-blue-500">University Of Johannesburg - Johannesburg</p>
+                        <p class="text-xs mb-3">01 Jun 2022 - 31 Nov 2022</p>
+                        <p class="text-xs mb-3">
+                            Teaching and guiding individuals in learning and understanding basic programming concepts, with a
+                            focus on Object-Oriented Programming (OOP) concepts in Python and
+                            C#.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
