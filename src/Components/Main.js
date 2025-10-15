@@ -58,101 +58,140 @@ const Main = () => {
                 </div>
                 
                 <div className="hidden md:flex md:flex-col">
-                    <h4 class="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-5">EXPERIENCE: </h4>
-                    <div class="mb-10 items-start">
-                        <ul className="flex-row md:flex md:static md:flex-row hidden ">
-                            <li onClick={() => {setActiveCompany(0)}} className={`w-52 text-xs text-center md:mr-2 px-4 py-3 rounded-md cursor-pointer transition-all duration-200 ${
-                                activeCompany === 0 
-                                    ? 'bg-black dark:bg-white text-white dark:text-black border-transparent' 
-                                    : 'border-gray-500 dark:border-white hover:bg-white hover:text-black'
-                            }`}>BMW Group SA</li>
-                            <li onClick={() => {setActiveCompany(1)}} className={`w-52 text-xs text-center md:mx-2 px-4 py-3 rounded-md cursor-pointer transition-all duration-200 ${
-                                activeCompany === 1 
-                                    ? 'bg-black dark:bg-white text-white dark:text-black border-transparent' 
-                                    : 'border-gray-500 dark:border-white hover:bg-white hover:text-black'
-                            }`}>University Of Johannesburg 1</li>
-                            <li onClick={() => {setActiveCompany(2)}} className={`w-52 text-xs text-center md:mx-2 px-4 py-3 rounded-md cursor-pointer transition-all duration-200 ${
-                                activeCompany === 2 
-                                    ? 'bg-black dark:bg-white text-white dark:text-black border-transparent' 
-                                    : 'border-gray-500 dark:border-white hover:bg-white hover:text-black'
-                            }`}>University Of Johannesburg 2</li>
-                        </ul>
-                    </div>
-                    {activeCompany === 0 ? (
-                        <div class="mb-52">
-                            <p class="text-4xl mb-3">Graduate Software Developer</p>
-                            <span class="flex justify-between text-sm text-blue-500 mb-3">
-                                <p>BMW Group South Africa - Pretoria</p>
-                                <p>01 Feb 2024 - Present</p>
-                            </span>
-                            <p>
-                                Responsible for innovation and digitalization in the security department at BMW Plant Rosslyn:<br/>
-                                Worked on computer vision AI development and integration to
-                                CCTV surveillance systems.<br/>
-                                Various mobile applications and web applications for digitalization within the security department.
-                            </p>
+                    <h4 class="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8">EXPERIENCE</h4>
+                    {/* Timeline container */}
+                    <div class="relative">
+                        {/* Vertical line */}
+                        <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-cyan-400 to-pink-500"></div>
+                        
+                        {/* Timeline items */}
+                        <div class="space-y-12">
+                            {/* BMW Group SA */}
+                            <div class="relative flex items-start">
+                                {/* Timeline dot */}
+                                <div class="absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-4 border-white dark:border-black"></div>
+                                
+                                {/* Content */}
+                                <div class="ml-16">
+                                    <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                                        <p class="text-2xl font-bold mb-2">Graduate Software Developer</p>
+                                        <div class="flex justify-between items-center text-sm text-blue-500 mb-3">
+                                            <p>BMW Group South Africa - Pretoria</p>
+                                            <p class="bg-blue-900 dark:bg-blue-100 px-2 py-1 rounded">01 February 2024 - Present</p>
+                                        </div>
+                                        <p class="text-gray-600 dark:text-gray-300 text-xl">
+                                            Responsible for innovation and digitalization in the security department at BMW Plant Rosslyn.
+                                            Worked on computer vision AI development and integration to CCTV surveillance systems.
+                                            Various mobile applications and web applications for digitalization within the security department.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* University Of Johannesburg 1 */}
+                            <div class="relative flex items-start">
+                                {/* Timeline dot */}
+                                <div class="absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-4 border-white dark:border-black"></div>
+                                
+                                {/* Content */}
+                                <div class="ml-16">
+                                    <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                                        <p class="text-2xl font-bold mb-2">Development Software A1 Tutor</p>
+                                        <div class="flex justify-between items-center text-sm text-blue-500 mb-3">
+                                            <p>University Of Johannesburg - Johannesburg</p>
+                                            <p class="bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded">01 Jul 2023 - 31 Dec 2023</p>
+                                        </div>
+                                        <p class="text-gray-600 dark:text-gray-300 text-xl">
+                                            Teaching and guiding individuals in learning and understanding basic programming concepts, with a
+                                            focus on Object-Oriented Programming (OOP) concepts in Python and C#.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* University Of Johannesburg 2 */}
+                            <div class="relative flex items-start">
+                                {/* Timeline dot */}
+                                <div class="absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-4 border-white dark:border-black"></div>
+                                
+                                {/* Content */}
+                                <div class="ml-16">
+                                    <div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                                        <p class="text-2xl font-bold mb-2">Student Front End Developer</p>
+                                        <div class="flex justify-between items-center text-sm text-blue-500 mb-3">
+                                            <p>University Of Johannesburg - Johannesburg</p>
+                                            <p class="bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded">01 Jun 2022 - 31 Nov 2022</p>
+                                        </div>
+                                        <p class="text-gray-600 dark:text-gray-300 text-xl">
+                                            I collaborated with a Project Manager and UI/UX designers to transform Figma designs into
+                                            functional and user friendly websites. Using JavaScript and ReactJS.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        ) : activeCompany === 1 ? 
-                        (
-                            <div class="mb-52">
-                                <p class="text-4xl mb-3">Development Software A1 Tutor</p>
-                                <span class="flex justify-between  text-sm text-blue-500 mb-3">
-                                    <p>University Of Johannesburg - Johannesburg</p>
-                                    <p>01 Jul 2023 - 31 Dec 2023</p>
-                                </span>
-                                <p>Teaching and guiding individuals in learning and understanding basic programming concepts, with a
-                                    focus on Object-Oriented Programming (OOP) concepts in Python and
-                                    C#.
-                                </p>
-                            </div>
-                        ) : (
-                            <div class="mb-52">
-                                <p class="text-4xl mb-3">Student Front End Developer</p>
-                                <span class="flex justify-between  text-sm text-blue-500 mb-3">
-                                    <p>University Of Johannesburg - Johannesburg</p>
-                                    <p>01 Jun 2022 - 31 Nov 2022</p>
-                                </span>
-                                <p>
-                                    I collaborated with a Project Manager and UI/UX designers to transform Figma designs into
-                                    functional and user friendly websites. Using JavaScript and ReactJS.
-                                </p>
-                            </div>
-                        ) 
-                    }
-                    
+                    </div>
                 </div>
+
+                {/* Mobile timeline */}
                 <div class="md:hidden flex flex-col">
-                    <h4 class="text-md bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-5">Experience</h4>
-                     <div class="mb-10 border-r border-b rounded-xl border-gray-300 dark:border-gray-700 p-5">
-                        <p class="text-2xl mb-3">Graduate Software Developer</p>
-                        <p class="text-xs text-blue-500">BMW Group South Africa - Pretoria</p>
-                        <p class="text-xs mb-3">01 Feb 2024 - Present</p>
-                        <p class="text-xs mb-3">
-                            Responsible for innovation and digitalization in the security department at BMW Plant Rosslyn:<br/>
-                            Worked on computer vision AI development and integration to
-                            CCTV surveillance systems.<br/>
-                            Various mobile applications and web applications for digitalization within the security department.
-                        </p>
-                    </div>
-                    <div class="mb-10 border-r border-b rounded-xl border-gray-300 dark:border-gray-700 p-5">
-                        <p class="text-2xl mb-3">Development Software A1 Tutor</p>
-                        <p class="text-xs text-blue-500">University Of Johannesburg - Johannesburg</p>
-                        <p class="text-xs mb-3">01 Jul 2023 - 31 Dec 2023</p>
-                        <p class="text-xs mb-3">
-                            Teaching and guiding individuals in learning and understanding basic programming concepts, with a
-                            focus on Object-Oriented Programming (OOP) concepts in Python and
-                            C#.
-                        </p>
-                    </div>
-                    <div class="mb-10 border-r border-b rounded-xl border-gray-300 dark:border-gray-700 p-5">
-                        <p class="text-2xl mb-3">Student Front End Developer</p>
-                        <p class="text-xs text-blue-500">University Of Johannesburg - Johannesburg</p>
-                        <p class="text-xs mb-3">01 Jun 2022 - 31 Nov 2022</p>
-                        <p class="text-xs mb-3">
-                            Teaching and guiding individuals in learning and understanding basic programming concepts, with a
-                            focus on Object-Oriented Programming (OOP) concepts in Python and
-                            C#.
-                        </p>
+                    <h4 class="text-lg bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-6">Experience</h4>
+                    
+                    {/* Mobile timeline container */}
+                    <div class="relative">
+                        {/* Vertical line */}
+                        <div class="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-purple-500 via-cyan-400 to-pink-500"></div>
+                        
+                        {/* Timeline items */}
+                        <div class="space-y-8">
+                            {/* BMW Group SA */}
+                            <div class="relative flex items-start">
+                                <div class="absolute left-2.5 w-3 h-3 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-2 border-white dark:border-black"></div>
+                                <div class="ml-10">
+                                    <div class="bg-white dark:bg-gray-900 p-4 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+                                        <p class="text-lg font-bold mb-2">Graduate Software Developer</p>
+                                        <p class="text-xs text-blue-500">BMW Group South Africa - Pretoria</p>
+                                        <p class="text-xs mb-2 bg-blue-100 dark:bg-blue-900 inline-block px-2 py-1 rounded">01 Feb 2024 - Present</p>
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
+                                            Responsible for innovation and digitalization in the security department at BMW Plant Rosslyn.
+                                            Worked on computer vision AI development and integration to CCTV surveillance systems.
+                                            Various mobile applications and web applications for digitalization within the security department.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* University positions */}
+                            <div class="relative flex items-start">
+                                <div class="absolute left-2.5 w-3 h-3 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-2 border-white dark:border-black"></div>
+                                <div class="ml-10">
+                                    <div class="bg-white dark:bg-gray-900 p-4 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+                                        <p class="text-lg font-bold mb-2">Development Software A1 Tutor</p>
+                                        <p class="text-xs text-blue-500">University Of Johannesburg - Johannesburg</p>
+                                        <p class="text-xs mb-2 bg-blue-100 dark:bg-blue-900 inline-block px-2 py-1 rounded">01 Jul 2023 - 31 Dec 2023</p>
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
+                                            Teaching and guiding individuals in learning and understanding basic programming concepts, with a
+                                            focus on Object-Oriented Programming (OOP) concepts in Python and C#.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative flex items-start">
+                                <div class="absolute left-2.5 w-3 h-3 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-2 border-white dark:border-black"></div>
+                                <div class="ml-10">
+                                    <div class="bg-white dark:bg-gray-900 p-4 rounded-lg shadow border border-gray-200 dark:border-gray-700">
+                                        <p class="text-lg font-bold mb-2">Student Front End Developer</p>
+                                        <p class="text-xs text-blue-500">University Of Johannesburg - Johannesburg</p>
+                                        <p class="text-xs mb-2 bg-blue-100 dark:bg-blue-900 inline-block px-2 py-1 rounded">01 Jun 2022 - 31 Nov 2022</p>
+                                        <p class="text-xs text-gray-600 dark:text-gray-300">
+                                            I collaborated with a Project Manager and UI/UX designers to transform Figma designs into
+                                            functional and user friendly websites. Using JavaScript and ReactJS.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
