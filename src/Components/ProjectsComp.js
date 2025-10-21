@@ -185,6 +185,8 @@ const ProjectsComp = () => {
                 </div>
             </div>
             <div className="md:hidden block">
+                <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8">PROJECTS</h4>
+
                 <Slider {...settings}>
                     {mobileProjects.map((proj, idx) => (
                     <div key={proj.title} className="px-0">
@@ -195,10 +197,10 @@ const ProjectsComp = () => {
                             <div className={`flip-card ${flipped === true ? "flipped" : ""} rounded-lg inline-block`}>
                                 <div className="flip-card-inner">
                                     <div className="flip-card-front">
-                                        <h2 className="relative z-10 -top-3/4 left-0 right-0 text-white text-center font-mono bg-white/30 backdrop-brightness-100 px-4 py-2"
+                                        <h2 className=" text-white text-center font-mono bg-white/30 backdrop-brightness-100 px-4 py-2"
                                             style={{textShadow: '2px 2px 4px rgba(0,0,0,2)'}}>
                                             {proj.title}
-                                            </h2>
+                                        </h2>
                                         <div className="h-56 w-full inset-0 bg-cover relative"
                                             style={{
                                             backgroundImage: `url(${proj.image})`,
