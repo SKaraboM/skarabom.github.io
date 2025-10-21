@@ -50,7 +50,7 @@ const ProjectsComp = () => {
     useEffect(() => {},[flipped])
 
     return (
-        <div className="mt-12 bg-white dark:bg-black md:pb-28">
+        <div className="mt-12 bg-white dark:bg-black md:pb-12">
             <div className="hidden md:block ">
                 <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8">PROJECTS</h4>
                 <div className="grid grid-cols-4 gap-4">

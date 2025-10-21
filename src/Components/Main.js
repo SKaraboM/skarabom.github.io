@@ -13,7 +13,7 @@ const Main = () => {
     // Scroll to projects section
     const downloadCV = () => {
         const link = document.createElement('a');
-        link.href = '/assets/filetest.pdf';
+        link.href = '/assets/resume.pdf';
         link.download = 'Solomon_Makgoba_CV.pdf';
         document.body.appendChild(link);
         link.click();
@@ -103,7 +103,7 @@ const Main = () => {
                                 ? 'bg-gradient-to-r  from-cyan-400 via-purple-500 to-pink-500 text-white border-transparent font-bold'
                                 : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
                             }`}
-                    >Contact Me</li>
+                    >Let's Connect</li>
                      
                     <li 
                     onClick={() => downloadCV()}
@@ -135,7 +135,7 @@ const Main = () => {
                             : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
                         }`}
                         
-                        >Contact Me</li>
+                        >Let's Connect</li>
                         <li 
                         onClick={() => {
                             setMenuOpen(false);
