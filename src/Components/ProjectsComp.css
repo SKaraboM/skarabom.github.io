@@ -1,0 +1,25 @@
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+
+}
+.flip-card-inner {
+  transition: transform .5s cubic-bezier(.41,.63,.7,1.1);
+  transform-style: preserve-3d;
+  
+}
+.flip-card.flipped .flip-card-inner {
+    opacity: 1;
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  backface-visibility: hidden;
+}
+.flip-card-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+    opacity: 1;
+}

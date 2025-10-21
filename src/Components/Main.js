@@ -2,16 +2,26 @@ import Logo from "./img/favicon.png"
 import React, { useEffect, useState,useRef } from "react";
 import ExperienceComp from "./ExperienceComp";
 import ProjectsComp from "./ProjectsComp"
+import ContactMe from "./ContactMe"
 
 const Main = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeCompany, setActiveCompany] = useState(0);
     const [activeSection, setActiveSection] = useState('');
     const projectsRef = useRef(null);
+    const contactsRef = useRef(null);
 
     // Scroll to projects section
     const scrollToProjects = () => {
         projectsRef.current?.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+        });
+
+        console.log(activeSection)
+    };
+    const scrollToContacts = () => {
+        contactsRef.current?.scrollIntoView({ 
             behavior: 'smooth',
             block: 'start'
         });
@@ -24,10 +34,22 @@ const Main = () => {
         const handleScroll = () => {
             if (projectsRef.current) {
                 const rect = projectsRef.current.getBoundingClientRect();
-                const isInView = rect.top <= 500 && rect.bottom >= 500;
+                console.log(rect.top, rect.bottom)
+                const isInView = rect.top <=1100 && rect.bottom >= 900;
                 
                 if (isInView) {
                     setActiveSection('projects');
+                } else {
+                    setActiveSection('');
+                }
+            }
+            if (contactsRef.current) {
+                const rect = contactsRef.current.getBoundingClientRect();
+                console.log(rect.top, rect.bottom)
+                const isInView = rect.top <=300 && rect.bottom >= 500;
+                
+                if (isInView) {
+                    setActiveSection('contact_me');
                 } else {
                     setActiveSection('');
                 }
@@ -67,10 +89,18 @@ const Main = () => {
                             activeSection === 'projects'
                                 ? 'bg-gradient-to-r  from-cyan-400 via-purple-500 to-pink-500 text-white border-transparent font-bold'
                                 : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
-                        }`}
+                            }`}
                     >Projects</li>
-                    <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white hover:cursor-pointer px-4 py-2 rounded-md">Contact Me</li>
-                    <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 hover:cursor-pointer hover:text-white px-4 py-2 rounded-md">Download CV</li>
+
+                    <li onClick={scrollToContacts}
+                    className={`w-32 text-xs border text-center my-auto md:mx-4 hover:cursor-pointer px-4 py-2 rounded-md transition-all duration-200 ${
+                            activeSection === 'contact_me'
+                                ? 'bg-gradient-to-r  from-cyan-400 via-purple-500 to-pink-500 text-white border-transparent font-bold'
+                                : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
+                            }`}
+                    >Contact Me</li>
+                     
+                     <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 hover:cursor-pointer hover:text-white px-4 py-2 rounded-md">Download CV</li>
                 </ul>
                 {menuOpen && (
                     <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white text-sm absolute right-0 top-20 w-40 shadow-lg md:hidden z-50">
@@ -111,6 +141,11 @@ const Main = () => {
                  <div ref={projectsRef}>
                     <ProjectsComp/>
                 </div>
+                <div ref={contactsRef}>
+                    <ContactMe/>
+                </div>
+
+
             </div>
         </div>
     );

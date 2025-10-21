@@ -14,13 +14,13 @@ const ExperienceComp = () => {
                     {/* Timeline items */}
                     <div className="space-y-12">
                         {/* BMW Group SA */}
-                        <div className="relative flex items-start">
+                        <div className="relative flex items-start w-full">
                             {/* Timeline dot */}
                             <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-4 border-white dark:border-black"></div>
                             
                             {/* Content */}
                             <div className="ml-16">
-                                <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
+                                <div className="bg-white dark:bg-gray-900 p-6 w-auto rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
                                     <p className="text-2xl font-bold mb-2">Graduate Software Developer</p>
                                     <div className="flex justify-between items-center text-sm text-blue-500 mb-3">
                                         <p>BMW Group South Africa - Pretoria</p>
@@ -36,12 +36,11 @@ const ExperienceComp = () => {
                         </div>
 
                         {/* University Of Johannesburg 1 */}
-                        <div className="relative flex items-start">
+                        <div className="relative flex items-start w-full">
                             {/* Timeline dot */}
                             <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-4 border-white dark:border-black"></div>
-                            
                             {/* Content */}
-                            <div className="ml-16">
+                            <div className="ml-16  w-full">
                                 <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
                                     <p className="text-2xl font-bold mb-2">Development Software A1 Tutor</p>
                                     <div className="flex justify-between items-center text-sm text-blue-500 mb-3">
@@ -57,12 +56,12 @@ const ExperienceComp = () => {
                         </div>
 
                         {/* University Of Johannesburg 2 */}
-                        <div className="relative flex items-start">
+                        <div className="relative flex items-start w-ful">
                             {/* Timeline dot */}
                             <div className="absolute left-6 w-4 h-4 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 rounded-full border-4 border-white dark:border-black"></div>
                             
                             {/* Content */}
-                            <div className="ml-16">
+                            <div className="ml-16 w-full">
                                 <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-200 dark:border-gray-700">
                                     <p className="text-2xl font-bold mb-2">Student Front End Developer</p>
                                     <div className="flex justify-between items-center text-sm text-blue-500 mb-3">
