@@ -6,12 +6,19 @@ import ContactMe from "./ContactMe"
 
 const Main = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [activeCompany, setActiveCompany] = useState(0);
     const [activeSection, setActiveSection] = useState('');
     const projectsRef = useRef(null);
     const contactsRef = useRef(null);
 
     // Scroll to projects section
+    const downloadCV = () => {
+        const link = document.createElement('a');
+        link.href = '/assets/filetest.pdf';
+        link.download = 'Solomon_Makgoba_CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
     const scrollToProjects = () => {
         projectsRef.current?.scrollIntoView({ 
             behavior: 'smooth',
@@ -34,8 +41,7 @@ const Main = () => {
         const handleScroll = () => {
             if (projectsRef.current) {
                 const rect = projectsRef.current.getBoundingClientRect();
-                console.log(rect.top, rect.bottom)
-                const isInView = rect.top <=1100 && rect.bottom >= 900;
+                const isInView = rect.top <=300 && rect.bottom >= 500;
                 
                 if (isInView) {
                     setActiveSection('projects');
@@ -45,7 +51,6 @@ const Main = () => {
             }
             if (contactsRef.current) {
                 const rect = contactsRef.current.getBoundingClientRect();
-                console.log(rect.top, rect.bottom)
                 const isInView = rect.top <=300 && rect.bottom >= 500;
                 
                 if (isInView) {
@@ -63,10 +68,10 @@ const Main = () => {
     
     return (
         <div className="bg-white dark:bg-black text-black dark:text-white font-[family-name: Supreme] ">
-            <div className="sticky top-0 z-50 mx-auto flex justify-between h-20 bg-white dark:bg-black text-black dark:text-white min-w-100 w-5/5 md:w-5/6 md:my-auto ">
+            <div className="sticky top-0 z-50 mx-auto flex justify-between h-20 bg-white dark:bg-black text-black dark:text-white min-w-100 w-5/5 md:w-12/12 md:my-auto rounded-b-2xl shadow-md ">
                 <ul className="my-auto">
                     <li>
-                        <span className="flex flex-row">
+                        <span className="flex flex-row ml-5">
                             <img src={Logo} alt="icon" className="h-10"/>
                             <span className="my-auto ml-5"></span>
                         </span>
@@ -100,7 +105,10 @@ const Main = () => {
                             }`}
                     >Contact Me</li>
                      
-                     <li className="w-32 text-xs border border-gray-500 dark:border-white text-center my-auto md:mx-4 hover:bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 hover:cursor-pointer hover:text-white px-4 py-2 rounded-md">Download CV</li>
+                    <li 
+                    onClick={() => downloadCV()}
+                     
+                    className="w-32 text-xs border border-gray-700 dark:border-white hover:border-2 text-center my-auto md:mx-4 bg-gradient-to-r text-white from-purple-500 via-cyan-400 to-pink-500 hover:cursor-pointer hover:text-white  px-4 py-2 rounded-md">Download CV</li>
                 </ul>
                 {menuOpen && (
                     <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white text-sm absolute right-0 top-20 w-40 shadow-lg md:hidden z-50">
@@ -115,15 +123,33 @@ const Main = () => {
                                 : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
                         }`}
                         >Projects</li>
-                        <li className="px-4 py-2">Contact Me</li>
-                        <li className="px-4 py-2">Download CV</li>
+                        <li 
+                        onClick={() => {
+                            scrollToContacts();
+                            setMenuOpen(false);
+                        }}
+                        className={`px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer
+                        ${
+                        activeSection === 'projects'
+                            ? 'bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-white border-transparent font-bold'
+                            : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
+                        }`}
+                        
+                        >Contact Me</li>
+                        <li 
+                        onClick={() => {
+                            setMenuOpen(false);
+                            downloadCV()
+
+                        }}
+                        className="px-4 py-2 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500">Download CV</li>
                     </ul>
                 )}
             </div>
-            <div className=" text-gray-500 dark:text-white  w-5/6 md:justify-between md:items-center mx-auto text-lg">
+            <div className=" text-gray-500 dark:text-white  w-10/12 md:justify-between md:items-center mx-auto text-lg">
                 <div className="mb-10 md:mb-20">
                     <p className="mt-5 md:mb-2 md:mt-10 text-xs md:text-xl">Hello, I am</p>
-                    <h1 className="text-3xl md:mb-5  md:text-7xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text py-5">Solomon Makgoba</h1>
+                    <h1 className="text-3xl md:mb-5  md:text-6xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text py-5">Solomon Makgoba</h1>
                     <p className="text-xs md:text-xl">
                         A Junior Software Developer with a passion for building smart, practical, and innovative solutions. 
                         My journey has taken me from transforming Figma designs into interactive web apps to integrating 

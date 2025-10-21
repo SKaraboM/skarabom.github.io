@@ -9,9 +9,6 @@ import blackScreen from "./img/Projects/cvBlackScreen.jpeg"
 import "./ProjectsComp.css" // Add this for styles
 
 const ProjectsComp = () => {
-    const [ActiveProject, setActiveProject] = useState('')
-    const [showInfo, setShowInfo] = useState(false)
-    const [projectDetails, setProjectDetails] = useState({})
     const [activeMobile, setActiveMobile] = useState(null)
 
     const [flipped, setFlipped] = useState(false)
@@ -49,7 +46,6 @@ const ProjectsComp = () => {
         slidesToScroll: 1
     }
 
-// ...existing code...
 
     useEffect(() => {},[flipped])
 
@@ -189,16 +185,16 @@ const ProjectsComp = () => {
 
                 <Slider {...settings}>
                     {mobileProjects.map((proj, idx) => (
-                    <div key={proj.title} className="px-0">
+                    <div key={proj.title} className="px-0 ">
                         <div
                         className="rounded-lg shadow-lg bg-white dark:bg-gray-900 overflow-hidden cursor-pointer"
-                        onClick={() => {setActiveMobile(activeMobile === idx ? null : idx); setFlipped(prev => prev === true ? false : true)}}
+                        onClick={() => {setActiveMobile(activeMobile === idx ? null : idx); }}
                         >
-                            <div className={`flip-card ${flipped === true ? "flipped" : ""} rounded-lg inline-block`}>
-                                <div className="flip-card-inner">
+                            <div className={`flip-card ${flipped === idx ? "flipped" : ""} rounded-lg inline-block`}>
+                                <div className="flip-card-inner h-full">
                                     <div className="flip-card-front">
-                                        <h2 className=" text-white text-center font-mono bg-white/30 backdrop-brightness-100 px-4 py-2"
-                                            style={{textShadow: '2px 2px 4px rgba(0,0,0,2)'}}>
+                                        <h2 className="text-black dark:text-white text-center font-mono px-4 py-2"
+                                            >
                                             {proj.title}
                                         </h2>
                                         <div className="h-56 w-full inset-0 bg-cover relative"
@@ -211,11 +207,20 @@ const ProjectsComp = () => {
                                         <div className="p-4 text-sm">
                                             {proj.description}
                                         </div>
+                                        <button 
+                                            onClick={() => setFlipped(prev => prev === idx ? '' : idx)}
+                                            className='text-sm bg-white text-blue-500 p-2 float-end mx-2 mb-4 rounded-md'>Read More...
+                                        </button>
                                     </div>
-                                    <div className="flip-card-back">
+                                    <div className="flip-card-back h-full">
+                                        <button 
+                                            onClick={() => setFlipped(prev => prev === idx ? '' : idx)}
+                                            className='align-bottom text-sm bg-blue-500 text-white p-2 mx-2 mt-2 rounded-md'>Back
+                                        </button>
                                         <div className="p-4 text-sm">
                                             {proj.details}
                                         </div>
+                                        
                                     </div>
                                     
                                 </div>
