@@ -26,10 +26,8 @@ const TechStackComp = () => {
 
     return (
         <div className="mt-12 pb-12">
-            <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text font-bold">
-                PORTFOLIO TECH STACK
-            </h4>
-            <p className="text-sm mb-8">Technologies used to build this portfolio</p>
+            
+            <p className="text-sm mb-6">Technologies used to build this portfolio</p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {techStack.map((tech, index) => (

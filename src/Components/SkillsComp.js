@@ -42,11 +42,23 @@ const SkillsComp = () => {
                 <p className="text-sm mb-8">Rated by confidence</p>
                 <div className="px-4">
                     {skills.map((skill, index) => (
-                        <SkillBar 
-                            key={index}
-                            tech={skill.tech}
-                            rating={skill.rating}
-                        />
+                         <div key={index} className="grid grid-cols-12 items-center gap-4 mb-5 mt-5">
+                            <div className="col-span-2">
+                                <img 
+                                    src={`${process.env.PUBLIC_URL}/icons/${skill.tech}.png`} 
+                                    alt={skill.tech} 
+                                    className={skill.tech === "Flask" || skill.tech === "Linux" ? "dark:invert dark:brightness-0 dark:transition-all" : ""}
+                                    width="50"
+                                />
+                            </div>
+                            <div className="w-full col-span-10">
+                                <SkillBar 
+                                    tech={skill.tech}
+                                    rating={skill.rating}
+                                />
+                            </div>
+                        </div>
+                        
                     ))}
                 </div>
             </div>
