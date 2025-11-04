@@ -140,7 +140,7 @@ const ProjectsComp = () => {
                                                 cursor: `pointer`,
                                             }}>
                                         </div>
-                                        <h2 className="relative z-10 text-white text-center font-mono bg-white/30 backdrop-brightness-100 ps-10 pe-10"
+                                        <h2 className="relative z-10 text-white text-center bg-white/30 backdrop-brightness-100 ps-10 pe-10"
                                         style={{textShadow: '2px 2px 4px rgba(0,0,0,2)'}}>{proj.title}</h2>
                                     </div>
                                     <div className="text-sm mt-5">
@@ -183,7 +183,7 @@ const ProjectsComp = () => {
                             <div className={`flip-card ${flipped === idx ? "flipped" : ""} rounded-lg inline-block`}>
                                 <div className="flip-card-inner h-full">
                                     <div className="flip-card-front h-full">
-                                        <h2 className="text-black dark:text-white text-center font-mono px-4 py-2"
+                                        <h2 className="text-grey-800 dark:text-white text-center px-4 py-2"
                                             >
                                             {proj.title}
                                         </h2>

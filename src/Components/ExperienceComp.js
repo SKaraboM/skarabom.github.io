@@ -99,12 +99,12 @@ const ExperienceComp = () => {
                                     <p className="text-lg font-bold mb-2">Graduate Software Developer</p>
                                     <p className="text-xs text-blue-500">BMW Group South Africa - Pretoria</p>
                                     <p className="text-xs mb-2 bg-blue-100 dark:bg-blue-900 inline-block px-2 py-1 rounded">01 Feb 2024 - Present</p>
-                                    <p className="text-xs text-gray-600 dark:text-gray-300 h-36 overflow-auto">
-                                        • Drive innovation and digitalization initiatives within the security department at BMW Plant Rosslyn. <br/>  <br/>
-                                        • Contribute to AI integration within CCTV surveillance systems to enhance operational efficiency.<br/><br/>
-                                        • Develop mobile and web-based applications using modern frameworks and AWS services.<br/><br/>
-                                        • Collaborate cross-functionally with engineers to optimize software solutions and data workflows.<br/><br/>
-                                        • Support Security Department in digitization and innovation initiatives.<br/><br/>
+                                    <p className="text-xs text-gray-600 dark:text-gray-300 mt-2">
+                                        Drive innovation and digitalization initiatives within the security department at BMW Plant Rosslyn. <br/>  <br/>
+                                        Contribute to AI integration within CCTV surveillance systems to enhance operational efficiency.<br/><br/>
+                                        Develop mobile and web-based applications using modern frameworks and AWS services.<br/><br/>
+                                        Collaborate cross-functionally with engineers to optimize software solutions and data workflows.<br/><br/>
+                                        Support Security Department in digitization and innovation initiatives.<br/><br/>
                                     </p>
                                 </div>
                             </div>
@@ -118,10 +118,10 @@ const ExperienceComp = () => {
                                     <p className="text-lg font-bold mb-2">Development Software A1 Tutor</p>
                                     <p className="text-xs text-blue-500">University Of Johannesburg - Johannesburg</p>
                                     <p className="text-xs mb-2 bg-blue-100 dark:bg-blue-900 inline-block px-2 py-1 rounded">01 Jul 2023 - 31 Dec 2023</p>
-                                    <p className="text-xs text-gray-600 dark:text-gray-300 h-36 overflow-auto">
-                                        • Taught Object-Oriented Programming (OOP) concepts using Python and C#.<br/><br/>
-                                        • Assisted students with debugging, code optimization, and understanding key programming principles. <br/><br/>
-                                        • Promoted software development best practices and effective problem-solving approaches.<br/><br/>
+                                    <p className="text-xs text-gray-600 dark:text-gray-300 mt-2">
+                                        Taught Object-Oriented Programming (OOP) concepts using Python and C#.<br/><br/>
+                                        Assisted students with debugging, code optimization, and understanding key programming principles. <br/><br/>
+                                        Promoted software development best practices and effective problem-solving approaches.<br/><br/>
                                     </p>
                                 </div>
                             </div>
@@ -134,9 +134,9 @@ const ExperienceComp = () => {
                                     <p className="text-lg font-bold mb-2">Student Front End Developer</p>
                                     <p className="text-xs text-blue-500">University Of Johannesburg - Johannesburg</p>
                                     <p className="text-xs mb-2 bg-blue-100 dark:bg-blue-900 inline-block px-2 py-1 rounded">01 Jun 2022 - 31 Nov 2022</p>
-                                    <p className="text-xs text-gray-600 dark:text-gray-300 h-36 overflow-auto">
-                                        • Translated Figma UI/UX designs into responsive, functional web applications using JavaScript and ReactJS. <br/><br/>
-                                        • Worked closely with project managers to ensure timely delivery of user-friendly web interfaces.
+                                    <p className="text-xs text-gray-600 dark:text-gray-300 mt-2">
+                                        Translated Figma UI/UX designs into responsive, functional web applications using JavaScript and ReactJS. <br/><br/>
+                                        Worked closely with project managers to ensure timely delivery of user-friendly web interfaces.
                                     </p>
                                 </div>
                             </div>
