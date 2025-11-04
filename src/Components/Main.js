@@ -149,7 +149,7 @@ const Main = () => {
                                 downloadCV()
 
                             }}
-                        className="px-4 py-2 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500">Download CV</li>
+                        className="px-4 py-2 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 text-white">Download CV</li>
                     </ul>
                 )}
             </div>
