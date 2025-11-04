@@ -3,11 +3,13 @@ import React, { useEffect, useState,useRef } from "react";
 import ExperienceComp from "./ExperienceComp";
 import ProjectsComp from "./ProjectsComp"
 import ContactMe from "./ContactMe"
+import SkillsComp from "./SkillsComp"
 
 const Main = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('');
     const projectsRef = useRef(null);
+    const skillsRef = useRef(null);
     const contactsRef = useRef(null);
 
     // Scroll to projects section
@@ -20,20 +22,39 @@ const Main = () => {
         document.body.removeChild(link);
     }
     const scrollToProjects = () => {
-        projectsRef.current?.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
+        const headerOffset = 90; // height of sticky header (20rem)
+        const elementPosition = projectsRef.current?.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        const rect = projectsRef.current.getBoundingClientRect();
+        console.log("Projects: ", rect.top, rect.bottom);
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
         });
 
-        console.log(activeSection)
     };
+    const scrollToSkills = () => {
+        const headerOffset = 95; // height of sticky header (20rem)
+        const elementPosition = skillsRef.current?.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        const rect = skillsRef.current.getBoundingClientRect();
+        console.log("Skills: ", rect.top, rect.bottom);
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    }
     const scrollToContacts = () => {
-        contactsRef.current?.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
+        const headerOffset = 95; // height of sticky header (20rem)
+        const elementPosition = contactsRef.current?.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+        const rect = contactsRef.current.getBoundingClientRect();
+        console.log("Contacts: ", rect.top, rect.bottom);
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
         });
 
-        console.log(activeSection)
     };
 
     // Check which section is in view
@@ -41,8 +62,7 @@ const Main = () => {
         const handleScroll = () => {
             if (projectsRef.current) {
                 const rect = projectsRef.current.getBoundingClientRect();
-                const isInView = rect.top <=300 && rect.bottom >= 500;
-                
+                const isInView = rect.top <=300  && rect.bottom >=500;
                 if (isInView) {
                     setActiveSection('projects');
                 } else {
@@ -52,12 +72,23 @@ const Main = () => {
             if (contactsRef.current) {
                 const rect = contactsRef.current.getBoundingClientRect();
                 const isInView = rect.top <=300 && rect.bottom >= 500;
-                
                 if (isInView) {
                     setActiveSection('contact_me');
                 } else {
                     setActiveSection('');
                 }
+            }
+            if (skillsRef.current) {
+                const rect = skillsRef.current.getBoundingClientRect();
+                const isInView = rect.top <=300 && rect.bottom >= 500;
+                if (isInView) {
+                    setActiveSection('skills');
+                } else {
+                    setActiveSection('');
+                }
+            }
+            else {
+                setActiveSection('');
             }
         };
 
@@ -68,11 +99,11 @@ const Main = () => {
     
     return (
         <div className="bg-white dark:bg-black text-black dark:text-white font-[family-name: Supreme] ">
-            <div className="sticky top-0 z-50 mx-auto flex justify-between h-20 bg-white dark:bg-black text-black dark:text-white min-w-100 w-5/5 md:w-12/12 md:my-auto rounded-b-2xl shadow-md ">
+            <div className="sticky top-0 z-50 mx-auto flex justify-between md:h-20 h-12 bg-white dark:bg-black text-black dark:text-white min-w-100 w-5/5 md:w-12/12 md:my-auto shadow-md ">
                 <ul className="my-auto">
                     <li>
                         <span className="flex flex-row ml-5">
-                            <img src={Logo} alt="icon" className="h-10"/>
+                            <img src={Logo} alt="icon" className="h-8"/>
                             <span className="my-auto ml-5"></span>
                         </span>
                     </li>
@@ -96,6 +127,13 @@ const Main = () => {
                                 : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
                             }`}
                     >Projects</li>
+                    <li onClick={scrollToSkills}
+                        className={`w-32 text-xs border text-center my-auto md:mx-4 hover:cursor-pointer px-4 py-2 rounded-md transition-all duration-200 ${
+                            activeSection === 'skills'
+                                ? 'bg-gradient-to-r  from-cyan-400 via-purple-500 to-pink-500 text-white border-transparent font-bold'
+                                : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
+                            }`}
+                    >Skills</li>
 
                     <li onClick={scrollToContacts}
                     className={`w-32 text-xs border text-center my-auto md:mx-4 hover:cursor-pointer px-4 py-2 rounded-md transition-all duration-200 ${
@@ -111,7 +149,7 @@ const Main = () => {
                     className="w-32 text-xs border border-gray-700 dark:border-white hover:border-2 text-center my-auto md:mx-4 bg-gradient-to-r text-white from-purple-500 via-cyan-400 to-pink-500 hover:cursor-pointer hover:text-white  px-4 py-2 rounded-md">Download CV</li>
                 </ul>
                 {menuOpen && (
-                    <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white text-sm absolute right-0 top-20 w-40 shadow-lg md:hidden z-50">
+                    <ul className="flex flex-col bg-white dark:bg-black text-black dark:text-white text-sm absolute right-0 top-12 w-40 shadow-zinc-500 shadow-lg md:hidden z-50">
                         <li onClick={() => {
                                 scrollToProjects();
                                 setMenuOpen(false);
@@ -123,25 +161,33 @@ const Main = () => {
                                 : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
                         }`}
                         >Projects</li>
-                        <li 
-                        onClick={() => {
-                            scrollToContacts();
-                            setMenuOpen(false);
-                        }}
-                        className={`px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer
-                        ${
-                        activeSection === 'projects'
-                            ? 'bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-white border-transparent font-bold'
-                            : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
-                        }`}
-                        
+                        <li onClick={() => {
+                                scrollToSkills();
+                                setMenuOpen(false);
+                            }}
+                            className={`px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer
+                            ${
+                            activeSection === 'skills'
+                                ? 'bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-white border-transparent font-bold'
+                                : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
+                            }`}
+                        >Skills</li>
+                        <li onClick={() => {
+                                scrollToContacts();
+                                setMenuOpen(false);
+                            }}
+                            className={`px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer
+                            ${
+                            activeSection === 'projects'
+                                ? 'bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 text-white border-transparent font-bold'
+                                : 'border-gray-500 dark:border-white hover:bg-black hover:text-white dark:hover:text-black dark:hover:bg-white'
+                            }`}
                         >Let's Connect</li>
-                        <li 
-                        onClick={() => {
-                            setMenuOpen(false);
-                            downloadCV()
+                        <li onClick={() => {
+                                setMenuOpen(false);
+                                downloadCV()
 
-                        }}
+                            }}
                         className="px-4 py-2 bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500">Download CV</li>
                     </ul>
                 )}
@@ -166,6 +212,9 @@ const Main = () => {
                 <ExperienceComp/>
                  <div ref={projectsRef}>
                     <ProjectsComp/>
+                </div>
+                <div ref={skillsRef}>
+                    <SkillsComp/>
                 </div>
                 <div ref={contactsRef}>
                     <ContactMe/>

@@ -25,10 +25,10 @@ const ProjectsComp = () => {
                 "Major Security Incident reporting and tracking"
             ],
             Technologies: [
-                "ReactJS",
+                "React.js",
                 "CSS",
                 "Axios",
-                "NodeJS",
+                "Node.js",
                 "AWS API Gateway",
                 "AWS Lambda",
                 "DynamoDB"
@@ -73,10 +73,10 @@ const ProjectsComp = () => {
                 "Link visitors to their internal hosts for accountability."
             ],
             Technologies: [
-                "ReactJS",
+                "React.js",
                 "CSS",
                 "Axios",
-                "NodeJS",
+                "Node.js",
                 "AWS API Gateway",
                 "AWS Lambda",
                 "DynamoDB"
@@ -85,13 +85,26 @@ const ProjectsComp = () => {
         {
             title: "AI CCTV Surveillance",
             image: blackScreen,
-            description: "AI-Powered CCTV system for high-risk areas warehouses and perimeter fences. Using advanced computer vision, it detects intrusions and suspicious activity in real time, enhancing control room monitering with smart alerts and analytics. Scalable and reliable.",
+            description: "AI-Powered CCTV system for high-risk areas, warehouses and perimeter fences. Using advanced computer vision, it detects intrusions and suspicious activity in real time, enhancing control room monitering with smart alerts and analytics. Scalable and reliable.",
             details: "Details about the AI CCTV Surveillance project.",
             features: [
-                "",""
+                "YOLO Object detection models reliably detects objects and movement in a scene",
+                "Real-time alerting and monitoring capabilities",
+                "Scalable architecture for high-demand environments",
+                "Seamless integration with existing CCTV security systems",
+                "Advanced analytics and reporting features",
+                "Customizable alerting and notification system"
             ],
             Technologies: [
-                "",""
+                "Python", 
+                "OpenCV", 
+                "TensorFlow",
+                "Ultralytics YOLO",
+                "Roboflow",
+                "Axis Communications Infrastructure",
+
+                
+
             ]
         }
     ]
@@ -109,7 +122,7 @@ const ProjectsComp = () => {
     return (
         <div className="mt-12 bg-white dark:bg-black md:pb-12">
             <div className="hidden md:block ">
-                <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8">PROJECTS</h4>
+                <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8 font-bold">PROJECTS</h4>
                 <div className="grid grid-cols-4 gap-4">
                     {mobileProjects && mobileProjects.map((proj, idx) => {
                         return (
@@ -125,7 +138,6 @@ const ProjectsComp = () => {
                                                 filter: `brightness(0.7) blur(2px)`,
                                                 width: `100%`,
                                                 cursor: `pointer`,
-
                                             }}>
                                         </div>
                                         <h2 className="relative z-10 text-white text-center font-mono bg-white/30 backdrop-brightness-100 ps-10 pe-10"
@@ -138,17 +150,16 @@ const ProjectsComp = () => {
                                 <div className='flip-card-back w-full h-full'>
                                     <h2 className="text-center py-2 text-gray-400">{proj.title}</h2>
                                     <div className="ml-4">
-                                        <p className='text-gray-400 text-sm -ml-1 mb-2'><b>Features:</b></p>
+                                        <p className=' text-sm -ml-1 mb-2'><b>Features:</b></p>
                                         <ul className="text-xs list-disc ml-2">
                                             {proj.features && proj.features.map((element, id) => {
-                                                return (<><li className="mb-2" key={id}>{element}</li></>)
+                                                return (<><li className="mb-2 dark:text-gray-400 text-gray-600 list-none" key={id}>{element}</li></>)
                                             })}
                                         </ul>
-                                        <br/>
-                                        <p className='mt-1 mb-2 text-gray-400 text-sm -ml-1'><b>Technologies Used:</b></p>
-                                        <ul className="text-sm list-disc ml-2">
+                                        <p className='mt-5 mb-1 text-sm -ml-1'><b>Technologies Used:</b></p>
+                                        <ul className="text-xs list-disc ml-2">
                                             {proj.Technologies && proj.Technologies.map((element, id) => {
-                                                return (<li key={id}>{element}</li>)
+                                                return (<li className="dark:text-gray-400 text-gray-600 list-none mb-1" key={id}>{element}</li>)
                                             })}
                                         </ul>
                                     </div>
@@ -160,18 +171,18 @@ const ProjectsComp = () => {
                 </div>
             </div>
             <div className="md:hidden block">
-                <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8">PROJECTS</h4>
+                <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8 font-bold">PROJECTS</h4>
 
                 <Slider {...settings}>
                     {mobileProjects.map((proj, idx) => (
-                    <div key={proj.title} className="px-0 ">
+                    <div key={proj.title} className="px-0">
                         <div
                         className="rounded-lg shadow-lg bg-white dark:bg-gray-900 overflow-hidden cursor-pointer"
                         onClick={() => {setActiveMobile(activeMobile === idx ? null : idx); }}
                         >
                             <div className={`flip-card ${flipped === idx ? "flipped" : ""} rounded-lg inline-block`}>
                                 <div className="flip-card-inner h-full">
-                                    <div className="flip-card-front">
+                                    <div className="flip-card-front h-full">
                                         <h2 className="text-black dark:text-white text-center font-mono px-4 py-2"
                                             >
                                             {proj.title}
@@ -190,23 +201,23 @@ const ProjectsComp = () => {
                                             className='text-xs bg-white text-blue-500 p-2 float-end mx-2 mb-4 rounded-md border border-blue-500'>Read More...
                                         </button>
                                     </div>
-                                    <div className="flip-card-back h-full ">
+                                    <div className="flip-card-back h-full">
                                         <button 
                                             onClick={() => setFlipped(prev => prev === idx ? '' : idx)}
                                             className='align-bottom text-sm bg-blue-500 text-white p-2 mx-2 mt-2 rounded-md'>Back
                                         </button>
                                         <div className="p-4 text-sm text-white h-full overflow-auto">
                                             <p className='-ml-2 mb-2 text-gray-400'><b>Features:</b></p>
-                                            <ul className="text-xs list-disc ml-2">
+                                            <ul className="text-xs list-disc ml-2 ">
                                                 {proj.features && proj.features.map((element, id) => {
-                                                    return (<li key={id}>{element}</li>)
+                                                    return (<li className="dark:text-gray-400 text-gray-600 list-none mb-1" key={id}>{element}</li>)
                                                 })}
                                             </ul>
                                             <br/>
                                             <p className='-ml-2 mt-2 mb-2 text-gray-400'><b>Technologies Used:</b></p>
                                             <ul className="text-xs list-disc ml-2">
                                                 {proj.Technologies && proj.Technologies.map((element, id) => {
-                                                    return (<li key={id}>{element}</li>)
+                                                    return (<li className="dark:text-gray-400 text-gray-600 list-none mb-1" key={id}>{element}</li>)
                                                 })}
                                             </ul>
                                             

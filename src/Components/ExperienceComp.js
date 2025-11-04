@@ -3,7 +3,7 @@ const ExperienceComp = () => {
     return(
         <>
             <div className="hidden md:flex md:flex-col">
-                <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8">EXPERIENCE</h4>
+                <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-8 font-bold">EXPERIENCE</h4>
                 {/* Timeline container */}
                 <div className="relative mb-10">
                     {/* Vertical line */}
@@ -82,7 +82,7 @@ const ExperienceComp = () => {
 
             {/* Mobile timeline */}
             <div className="md:hidden flex flex-col">
-                <h4 className="text-lg bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-6">Experience</h4>
+                <h4 className="text-lg bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text mb-6 font-bold">Experience</h4>
                 
                 {/* Mobile timeline container */}
                 <div className="relative">
