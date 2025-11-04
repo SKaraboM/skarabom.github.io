@@ -1,9 +1,10 @@
 import Logo from "./img/favicon.png"
-import React, { useEffect, useState,useRef } from "react";
+import { useState,useRef } from "react";
 import ExperienceComp from "./ExperienceComp";
 import ProjectsComp from "./ProjectsComp"
 import ContactMe from "./ContactMe"
 import SkillsComp from "./SkillsComp"
+import TechStackComp from "./TechStackComp";
 
 const Main = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -57,46 +58,6 @@ const Main = () => {
 
     };
 
-    // Check which section is in view
-    useEffect(() => {
-        const handleScroll = () => {
-            if (projectsRef.current) {
-                const rect = projectsRef.current.getBoundingClientRect();
-                const isInView = rect.top <=300  && rect.bottom >=500;
-                if (isInView) {
-                    setActiveSection('projects');
-                } else {
-                    setActiveSection('');
-                }
-            }
-            if (contactsRef.current) {
-                const rect = contactsRef.current.getBoundingClientRect();
-                const isInView = rect.top <=300 && rect.bottom >= 500;
-                if (isInView) {
-                    setActiveSection('contact_me');
-                } else {
-                    setActiveSection('');
-                }
-            }
-            if (skillsRef.current) {
-                const rect = skillsRef.current.getBoundingClientRect();
-                const isInView = rect.top <=300 && rect.bottom >= 500;
-                if (isInView) {
-                    setActiveSection('skills');
-                } else {
-                    setActiveSection('');
-                }
-            }
-            else {
-                setActiveSection('');
-            }
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
-
-    
     return (
         <div className="bg-white dark:bg-black text-black dark:text-white font-[family-name: Supreme] ">
             <div className="sticky top-0 z-50 mx-auto flex justify-between md:h-20 h-12 bg-white dark:bg-black text-black dark:text-white min-w-100 w-5/5 md:w-12/12 md:my-auto shadow-md ">
@@ -195,14 +156,11 @@ const Main = () => {
             <div className=" text-gray-500 dark:text-white  w-10/12 md:justify-between md:items-center mx-auto text-lg">
                 <div className="mb-10 md:mb-20">
                     <p className="mt-5 md:mb-2 md:mt-10 text-xs md:text-xl">Hello, I am</p>
-                    <h1 className="text-3xl md:mb-5  md:text-6xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text py-5">Solomon Makgoba</h1>
+                    <h1 className="text-3xl md:mb-5  md:text-6xl bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text py-5">Solomon Karabo Makgoba</h1>
                     <p className="text-xs md:text-xl">
-                        A Junior Software Developer with a passion for building smart, practical, and innovative solutions. 
-                        My journey has taken me from transforming Figma designs into interactive web apps to integrating 
-                        AI-powered computer vision into security systems at BMW Group SA.           
-                        With skills spanning Python, JavaScript, React, AWS, and AI frameworks, 
-                        I enjoy creating tools that make life easier, businesses smarter, and systems more secure. 
-                        I thrive in collaborative environments, but I’m equally driven when exploring new technologies and pushing myself to grow.
+                        an ambitious and detail-oriented Junior Software Developer with hands-on experience in AWS cloud tools, 
+                        software development, and AI automation. I have a strong background in Python, C#, and JavaScript with exposure to cloud-based, 
+                        full stack software development. Certified AWS Cloud Practitioner with proven ability to support cloud operations and follow corporate coding principles.
                     <br />
                     <br />
                         What excites me most about tech is its power to shape the future—and I’m here to be part of that future by crafting solutions that are impactful, scalable, and human-centered.
@@ -210,6 +168,7 @@ const Main = () => {
                     </p>
                 </div>
                 <ExperienceComp/>
+
                  <div ref={projectsRef}>
                     <ProjectsComp/>
                 </div>
@@ -219,6 +178,8 @@ const Main = () => {
                 <div ref={contactsRef}>
                     <ContactMe/>
                 </div>
+                <TechStackComp/>
+
 
 
             </div>

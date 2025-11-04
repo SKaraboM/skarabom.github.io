@@ -24,7 +24,7 @@ const ExperienceComp = () => {
                                         <p>BMW Group South Africa - Pretoria</p>
                                         <p className="dark:text-white text-blue-500 bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded">01 February 2024 - Current</p>
                                     </div>
-                                    <p className="text-gray-600 dark:text-gray-300 text-xl">
+                                    <p className="text-gray-600 dark:text-gray-300 text-md">
                                         • Drive innovation and digitalization initiatives within the security department at BMW Plant Rosslyn. <br/>
                                         • Contribute to AI integration within CCTV surveillance systems to enhance operational efficiency.<br/>
                                         • Develop mobile and web-based applications using modern frameworks and AWS services.<br/>
@@ -47,7 +47,7 @@ const ExperienceComp = () => {
                                         <p>University Of Johannesburg - Johannesburg</p>
                                         <p className="dark:text-white text-blue-500 bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded">01 Jul 2023 - 31 Dec 2023</p>
                                     </div>
-                                    <p className="text-gray-600 dark:text-gray-300 text-xl">
+                                    <p className="text-gray-600 dark:text-gray-300 text-md">
                                         • Taught Object-Oriented Programming (OOP) concepts using Python and C#.<br/>
                                         • Assisted students with debugging, code optimization, and understanding key programming principles. <br/>
                                         • Promoted software development best practices and effective problem-solving approaches.<br/>
@@ -69,7 +69,7 @@ const ExperienceComp = () => {
                                         <p>University Of Johannesburg - Johannesburg</p>
                                         <p className="dark:text-white text-blue-500 bg-blue-100 dark:bg-blue-900 px-2 py-1 rounded">01 Jun 2022 - 31 Nov 2022</p>
                                     </div>
-                                    <p className="text-gray-600 dark:text-gray-300 text-xl">
+                                    <p className="text-gray-600 dark:text-gray-300 text-md">
                                         • Translated Figma UI/UX designs into responsive, functional web applications using JavaScript and ReactJS. <br/>
                                         • Worked closely with project managers to ensure timely delivery of user-friendly web interfaces.
                                     </p>

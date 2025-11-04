@@ -5,24 +5,25 @@ const SkillsComp = () => {
         { tech: "React.js", rating: 8 },
         { tech: "Node.js", rating: 7 },
         { tech: "CSS", rating: 8 },
-        { tech: "AWS Cloud Tools", rating: 6 },
         { tech: "Python", rating: 8 },
         { tech: "Flask", rating: 5 },
         { tech: "PostgreSQL", rating: 4 },
+        { tech: "AWS Cloud Tools", rating: 6 },
+        { tech: "Linux", rating: 4 },
     ];
     return(
         <div className="mt-12 bg-white dark:bg-black md:pb-12">
-            <div className="hidden md:block ">
+            <div className="hidden md:block">
                 <h4 className="bg-gradient-to-r from-purple-500 via-cyan-400 to-pink-500 inline-block text-transparent bg-clip-text font-bold">SKILLS</h4>
-                <p className="text-sm mb-8">Rated by confidence</p>
-                <div className="w-full mx-auto ">
+                <p className="text-sm mb-8">Rated by confidence in each technology for use in projects</p>
+                <div className="w-full mx-auto">
                     {skills.map((skill, index) => (
                         <div key={index} className="grid grid-cols-12 items-center gap-4 mb-5 mt-5">
                             <div className="col-span-1">
                                 <img 
                                     src={`${process.env.PUBLIC_URL}/icons/${skill.tech}.png`} 
-                                    alt={`${skill.tech}`} 
-                                    className={skill.tech === "Flask" ? `dark:invert dark:brightness-0 dark:transition-all` : ""}
+                                    alt={skill.tech} 
+                                    className={skill.tech === "Flask" || skill.tech === "Linux" ? "dark:invert dark:brightness-0 dark:transition-all" : ""}
                                     width="50"
                                 />
                             </div>
@@ -50,7 +51,6 @@ const SkillsComp = () => {
                 </div>
             </div>
         </div>
-
     )
 }
 
