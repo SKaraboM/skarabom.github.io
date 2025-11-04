@@ -177,7 +177,7 @@ const ProjectsComp = () => {
                     {mobileProjects.map((proj, idx) => (
                     <div key={proj.title} className="px-0">
                         <div
-                        className="rounded-lg shadow-lg bg-white dark:bg-gray-900 overflow-hidden cursor-pointer"
+                        className="rounded-lg bg-white dark:bg-gray-900 overflow-hidden cursor-pointer"
                         onClick={() => {setActiveMobile(activeMobile === idx ? null : idx); }}
                         >
                             <div className={`flip-card ${flipped === idx ? "flipped" : ""} rounded-lg inline-block`}>
