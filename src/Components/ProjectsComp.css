@@ -1,25 +1,101 @@
-.flip-card {
-  perspective: 1000px;
-  cursor: pointer;
-
-}
-.flip-card-inner {
-  transition: transform .5s cubic-bezier(.41,.63,.7,1.1);
-  transform-style: preserve-3d;
-  
-}
-.flip-card.flipped .flip-card-inner {
-    opacity: 1;
-    transform: rotateY(180deg);
+/* Custom Scrollbar Styling */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
 }
 
-.flip-card-front, .flip-card-back {
-  backface-visibility: hidden;
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #e5e5e5;
+  border-radius: 10px;
 }
-.flip-card-back {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotateY(180deg);
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #fca311;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb:hover {
+  background: #14213d;
+}
+
+/* Firefox */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #fca311 #e5e5e5;
+}
+
+/* Hide scrollbar for mobile but keep functionality */
+@media (max-width: 768px) {
+  .scrollbar-thin::-webkit-scrollbar {
+    height: 4px;
+  }
+}
+
+/* Line clamp utilities */
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.line-clamp-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+/* Smooth animations */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
     opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Touch-friendly tap targets for mobile */
+@media (max-width: 768px) {
+  button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Smooth scroll behavior */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Better touch scrolling */
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+
+.overflow-x-auto > div > * {
+  scroll-snap-align: start;
 }

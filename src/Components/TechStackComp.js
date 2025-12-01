@@ -31,7 +31,7 @@ const TechStackComp = () => {
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 {techStack.map((tech, index) => (
-                    <div key={index} className="flex flex-col items-center p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+                    <div key={index} className="flex flex-col items-center p-4 rounded-lg border border-gray-200 hover:bg-gray-50 transition-all">
                         <img 
                             src={`${process.env.PUBLIC_URL}/icons/${tech.icon}`}
                             alt={tech.name}
@@ -39,7 +39,7 @@ const TechStackComp = () => {
                             className='m-2'
                         />
                         <h5 className="font-medium text-sm mb-2">{tech.name}</h5>
-                        <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+                        <p className="text-xs text-gray-500 text-center">
                             {tech.description}
                         </p>
                     </div>
