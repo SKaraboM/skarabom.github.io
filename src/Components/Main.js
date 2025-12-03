@@ -160,8 +160,8 @@ const Main = () => {
                     <h1 className="text-3xl md:mb-5  md:text-6xl text-[#fca311] py-5 font-bold">Solomon Karabo Makgoba</h1>
                     <p className="text-xs md:text-xl">
                         an ambitious and detail-oriented Junior Software Developer with hands-on experience in AWS cloud tools, 
-                        software development, and AI automation. I have a strong background in Python, C#, and JavaScript with exposure to cloud-based, 
-                        full stack software development. Certified AWS Cloud Practitioner with proven ability to support cloud operations and follow corporate coding principles.
+                        software development, and AI automation. I have a strong background in Python and JavaScript, with exposure to cloud-based, 
+                        full stack web development. Certified AWS Cloud Practitioner with proven ability to support cloud operations and follow corporate coding principles.
                     <br />
                     <br />
                         What excites me most about tech is its power to shape the future—and I’m here to be part of that future by crafting solutions that are impactful, scalable, and human-centered.
