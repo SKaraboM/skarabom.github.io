@@ -127,14 +127,14 @@ const ProjectsComp = () => {
             
             {/* Desktop Layout */}
             <div className="hidden md:block relative">
-                <div className="flex gap-6 min-h-[600px]">
+                <div className="flex gap-6 min-h-[600px] ">
                     {/* Left Side - Project Tabs */}
                     <div className="w-1/3 space-y-3">
                         {projects.map((project, idx) => (
                             <div
                                 key={project.id}
                                 onClick={() => setActiveProject(idx)}
-                                className={`cursor-pointer rounded-lg overflow-hidden transition-all duration-300 border-2 h-52 flex flex-col ${
+                                className={`cursor-pointer rounded-lg overflow-hidden transition-all duration-300 border-2 h-55 flex flex-col ${
                                     activeProject === idx
                                         ? 'border-[#fca311] shadow-lg scale-105'
                                         : 'border-[#e5e5e5] hover:border-[#14213d] hover:shadow-md'

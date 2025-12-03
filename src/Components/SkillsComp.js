@@ -5,14 +5,15 @@ const SkillsComp = () => {
 
     const techSkills = [
         { tech: "JavaScript", rating: 8 },
+        { tech: "Python", rating: 8 },
         { tech: "React.js", rating: 8 },
         { tech: "Node.js", rating: 7 },
-        { tech: "CSS", rating: 8 },
-        { tech: "Python", rating: 8 },
         { tech: "Flask", rating: 5 },
-        { tech: "PostgreSQL", rating: 4 },
-        { tech: "AWS Cloud Tools", rating: 6 },
+        { tech: "CSS", rating: 8 },
+        { tech: "PostgreSQL", rating: 5 },
+        { tech: "AWS", rating: 6 },
         { tech: "Linux", rating: 4 },
+        { tech: "Docker", rating: 4 },
     ];
 
     const softSkills = [
