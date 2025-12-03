@@ -11,7 +11,7 @@ const SkillsComp = () => {
         { tech: "Flask", rating: 5 },
         { tech: "CSS", rating: 8 },
         { tech: "PostgreSQL", rating: 5 },
-        { tech: "AWS", rating: 6 },
+        { tech: "AWS Cloud Tools", rating: 6 },
         { tech: "Linux", rating: 4 },
         { tech: "Docker", rating: 4 },
     ];
