@@ -159,13 +159,14 @@ const Main = () => {
                     <p className="mt-5 md:mb-2 md:mt-10 text-xs md:text-xl">Hello, I am</p>
                     <h1 className="text-3xl md:mb-5  md:text-6xl text-[#fca311] py-5 font-bold">Solomon Karabo Makgoba</h1>
                     <p className="text-xs md:text-xl">
-                        an ambitious and detail-oriented Junior Software Developer with hands-on experience in AWS cloud tools, 
-                        software development, and AI automation. I have a strong background in Python and JavaScript, with exposure to cloud-based, 
-                        full stack web development. Certified AWS Cloud Practitioner with proven ability to support cloud operations and follow corporate coding principles.
+                        a Graduate Software Engineer at BMW Group South Africa with a passion for building innovative digital solutions. 
+                        I specialize in full-stack web development, cloud technologies, and AI automation, with expertise in Python, JavaScript, React.js, and AWS services.
+                        Currently pursuing an Honours degree in Information Technology while driving digitalization initiatives at BMW Plant Rosslyn.
                     <br />
                     <br />
-                        What excites me most about tech is its power to shape the future—and I’m here to be part of that future by crafting solutions that are impactful, scalable, and human-centered.
-                        I am always eager to learn and adapt, and I believe that my diverse skill set allows me to tackle challenges from multiple angles.
+                        As a Certified AWS Cloud Practitioner, I focus on creating impactful, scalable solutions that optimize business processes and enhance operational efficiency.
+                        My experience spans from developing CCTV surveillance systems with AI integration to building responsive web applications and automation tools.
+                        I'm dedicated to continuous learning and leveraging technology to solve real-world problems.
                     </p> 
                 </div>
                  <div ref={projectsRef}>

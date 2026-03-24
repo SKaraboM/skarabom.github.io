@@ -8,8 +8,8 @@ const SkillsComp = () => {
         { tech: "Python", rating: 8 },
         { tech: "React.js", rating: 8 },
         { tech: "Node.js", rating: 7 },
-        { tech: "Flask", rating: 5 },
         { tech: "CSS", rating: 8 },
+        { tech: "Flask", rating: 5 },
         { tech: "PostgreSQL", rating: 5 },
         { tech: "AWS Cloud Tools", rating: 6 },
         { tech: "Linux", rating: 4 },
@@ -22,8 +22,16 @@ const SkillsComp = () => {
             description: "Analytical thinking and creative solution development"
         },
         { 
-            name: "Team Collaboration",
-            description: "Cross-functional teamwork and effective communication"
+            name: "Analytical Thinking",
+            description: "Breaking down complex problems and identifying patterns"
+        },
+        { 
+            name: "Clear Communication",
+            description: "Articulating technical concepts to diverse audiences"
+        },
+        { 
+            name: "Teamwork",
+            description: "Collaborating effectively in cross-functional teams"
         },
         { 
             name: "Adaptability",
@@ -34,8 +42,8 @@ const SkillsComp = () => {
             description: "Efficient prioritization and deadline management"
         },
         { 
-            name: "Critical Thinking",
-            description: "Data-driven decision making and strategic analysis"
+            name: "Computer Literacy",
+            description: "Proficient in Microsoft 365 and various software tools"
         },
         { 
             name: "Continuous Learning",

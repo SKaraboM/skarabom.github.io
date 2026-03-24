@@ -11,6 +11,28 @@ const ExperienceComp = () => {
                     
                     {/* Timeline items */}
                     <div className="space-y-12">
+                        {/* AIH Group */}
+                        <div className="relative flex items-start w-full">
+                            {/* Timeline dot */}
+                            <div className="absolute left-6 w-4 h-4 bg-[#fca311] rounded-full border-4 border-white"></div>
+                            
+                            {/* Content */}
+                            <div className="ml-16 w-full">
+                                <div className="bg-white p-6 w-auto rounded-lg shadow-lg border border-gray-200">
+                                    <p className="text-2xl font-bold mb-2">Digitalization Engineer Temp</p>
+                                    <div className="flex justify-between items-center text-sm text-[#14213d] mb-3">
+                                        <p>AIH Group - Pretoria</p>
+                                        <p className="text-white bg-[#fca311] px-2 py-1 rounded">02/2026 - Present</p>
+                                    </div>
+                                    <p className="text-gray-600 text-md">
+                                        • Drive digital transformation initiatives and automation projects.<br/>
+                                        • Design and implement technology solutions to improve business efficiency.<br/>
+                                        • Collaborate with stakeholders to identify digitalization opportunities.<br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
                         {/* BMW Group SA */}
                         <div className="relative flex items-start w-full">
                             {/* Timeline dot */}
@@ -19,23 +41,23 @@ const ExperienceComp = () => {
                             {/* Content */}
                             <div className="ml-16 w-full">
                                 <div className="bg-white p-6 w-auto rounded-lg shadow-lg border border-gray-200">
-                                    <p className="text-2xl font-bold mb-2">Graduate Software Developer</p>
+                                    <p className="text-2xl font-bold mb-2">Graduate Software Engineer</p>
                                     <div className="flex justify-between items-center text-sm text-[#14213d] mb-3">
-                                        <p>BMW Group South Africa - Pretoria</p>
-                                        <p className="text-white bg-[#fca311] px-2 py-1 rounded">01 February 2024 - Current</p>
+                                        <p>BMW Group South Africa - Johannesburg</p>
+                                        <p className="text-white bg-[#fca311] px-2 py-1 rounded">01/2024 - 01/2025</p>
                                     </div>
                                     <p className="text-gray-600 text-md">
-                                        • Drive innovation and digitalization initiatives within the security department at BMW Plant Rosslyn. <br/>
-                                        • Contribute to AI integration within CCTV surveillance systems to enhance operational efficiency.<br/>
-                                        • Develop mobile and web-based applications using modern frameworks and AWS services.<br/>
-                                        • Collaborate cross-functionally with engineers to optimize software solutions and data workflows.<br/>
-                                        • Support Security Department in digitization and innovation initiatives.<br/>
+                                        • Identified and implemented innovative digital solutions to optimize daily operations and business processes.<br/>
+                                        • Collaborated across functions to drive technology adoption and present strategic digital initiatives.<br/>
+                                        • Developed and maintained web and mobile applications using modern frameworks and AWS cloud services.<br/>
+                                        • Contributed to AI integration within CCTV surveillance systems to enhance operational efficiency.<br/>
+                                        • Supported cross-functional teams in digitalization and automation projects.<br/>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* University Of Johannesburg 1 */}
+                        {/* University Of Johannesburg */}
                         <div className="relative flex items-start w-full">
                             {/* Timeline dot */}
                             <div className="absolute left-6 w-4 h-4 bg-[#fca311] rounded-full border-4 border-white"></div>
@@ -45,33 +67,12 @@ const ExperienceComp = () => {
                                     <p className="text-2xl font-bold mb-2">Development Software A1 Tutor</p>
                                     <div className="flex justify-between items-center text-sm text-[#14213d] mb-3">
                                         <p>University Of Johannesburg - Johannesburg</p>
-                                        <p className="text-white bg-[#fca311] px-2 py-1 rounded">01 Jul 2023 - 31 Dec 2023</p>
+                                        <p className="text-white bg-[#fca311] px-2 py-1 rounded">08/2023 - 12/2023</p>
                                     </div>
                                     <p className="text-gray-600 text-md">
                                         • Taught Object-Oriented Programming (OOP) concepts using Python and C#.<br/>
                                         • Assisted students with debugging, code optimization, and understanding key programming principles. <br/>
                                         • Promoted software development best practices and effective problem-solving approaches.<br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* University Of Johannesburg 2 */}
-                        <div className="relative flex items-start w-full">
-                            {/* Timeline dot */}
-                            <div className="absolute left-6 w-4 h-4 bg-[#fca311] rounded-full border-4 border-white"></div>
-                            
-                            {/* Content */}
-                            <div className="ml-16 w-full">
-                                <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
-                                    <p className="text-2xl font-bold mb-2">Student Front End Developer</p>
-                                    <div className="flex justify-between items-center text-sm text-[#14213d] mb-3">
-                                        <p>University Of Johannesburg - Johannesburg</p>
-                                        <p className="text-white bg-[#fca311] px-2 py-1 rounded">01 Jun 2022 - 31 Nov 2022</p>
-                                    </div>
-                                    <p className="text-gray-600 text-md">
-                                        • Translated Figma UI/UX designs into responsive, functional web applications using JavaScript and ReactJS. <br/>
-                                        • Worked closely with project managers to ensure timely delivery of user-friendly web interfaces.
                                     </p>
                                 </div>
                             </div>
@@ -91,52 +92,54 @@ const ExperienceComp = () => {
                     
                     {/* Timeline items */}
                     <div className="space-y-8">
-                        {/* BMW Group SA */}
+                        {/* AIH Group */}
                         <div className="relative flex items-start">
                             <div className="absolute left-2.5 w-3 h-3 bg-[#fca311] rounded-full border-2 border-white"></div>
                             <div className="ml-10">
                                 <div className="bg-white p-4 rounded-lg shadow border border-gray-200">
-                                    <p className="text-lg font-bold mb-2">Graduate Software Developer</p>
-                                    <p className="text-xs text-[#14213d]">BMW Group South Africa - Pretoria</p>
-                                    <p className="text-xs mb-2 bg-[#fca311] text-white inline-block px-2 py-1 rounded">01 Feb 2024 - Present</p>
+                                    <p className="text-lg font-bold mb-2">Digitalization Engineer Temp</p>
+                                    <p className="text-xs text-[#14213d]">AIH Group - Pretoria</p>
+                                    <p className="text-xs mb-2 bg-[#fca311] text-white inline-block px-2 py-1 rounded">02/2026 - Present</p>
                                     <p className="text-xs text-gray-600 mt-2">
-                                        Drive innovation and digitalization initiatives within the security department at BMW Plant Rosslyn. <br/>  <br/>
-                                        Contribute to AI integration within CCTV surveillance systems to enhance operational efficiency.<br/><br/>
-                                        Develop mobile and web-based applications using modern frameworks and AWS services.<br/><br/>
-                                        Collaborate cross-functionally with engineers to optimize software solutions and data workflows.<br/><br/>
-                                        Support Security Department in digitization and innovation initiatives.<br/><br/>
+                                        Drive digital transformation initiatives and automation projects.<br/><br/>
+                                        Design and implement technology solutions to improve business efficiency.<br/><br/>
+                                        Collaborate with stakeholders to identify digitalization opportunities.<br/><br/>
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        {/* University positions */}
+                        {/* BMW Group SA */}
+                        <div className="relative flex items-start">
+                            <div className="absolute left-2.5 w-3 h-3 bg-[#fca311] rounded-full border-2 border-white"></div>
+                            <div className="ml-10">
+                                <div className="bg-white p-4 rounded-lg shadow border border-gray-200">
+                                    <p className="text-lg font-bold mb-2">Graduate Software Engineer</p>
+                                    <p className="text-xs text-[#14213d]">BMW Group South Africa - Johannesburg</p>
+                                    <p className="text-xs mb-2 bg-[#fca311] text-white inline-block px-2 py-1 rounded">01/2024 - 01/2025</p>
+                                    <p className="text-xs text-gray-600 mt-2">
+                                        Identified and implemented innovative digital solutions to optimize daily operations and business processes.<br/><br/>
+                                        Collaborated across functions to drive technology adoption and present strategic digital initiatives.<br/><br/>
+                                        Developed and maintained web and mobile applications using modern frameworks and AWS cloud services.<br/><br/>
+                                        Contributed to AI integration within CCTV surveillance systems to enhance operational efficiency.<br/><br/>
+                                        Supported cross-functional teams in digitalization and automation projects.<br/><br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* University Of Johannesburg */}
                         <div className="relative flex items-start">
                             <div className="absolute left-2.5 w-3 h-3 bg-[#fca311] rounded-full border-2 border-white"></div>
                             <div className="ml-10">
                                 <div className="bg-white p-4 rounded-lg shadow border border-gray-200">
                                     <p className="text-lg font-bold mb-2">Development Software A1 Tutor</p>
                                     <p className="text-xs text-[#14213d]">University Of Johannesburg - Johannesburg</p>
-                                    <p className="text-xs mb-2 bg-[#fca311] text-white inline-block px-2 py-1 rounded">01 Jul 2023 - 31 Dec 2023</p>
+                                    <p className="text-xs mb-2 bg-[#fca311] text-white inline-block px-2 py-1 rounded">08/2023 - 12/2023</p>
                                     <p className="text-xs text-gray-600 mt-2">
                                         Taught Object-Oriented Programming (OOP) concepts using Python and C#.<br/><br/>
                                         Assisted students with debugging, code optimization, and understanding key programming principles. <br/><br/>
                                         Promoted software development best practices and effective problem-solving approaches.<br/><br/>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="relative flex items-start">
-                            <div className="absolute left-2.5 w-3 h-3 bg-[#fca311] rounded-full border-2 border-white"></div>
-                            <div className="ml-10">
-                                <div className="bg-white p-4 rounded-lg shadow border border-gray-200">
-                                    <p className="text-lg font-bold mb-2">Student Front End Developer</p>
-                                    <p className="text-xs text-[#14213d]">University Of Johannesburg - Johannesburg</p>
-                                    <p className="text-xs mb-2 bg-[#fca311] text-white inline-block px-2 py-1 rounded">01 Jun 2022 - 31 Nov 2022</p>
-                                    <p className="text-xs text-gray-600 mt-2">
-                                        Translated Figma UI/UX designs into responsive, functional web applications using JavaScript and ReactJS. <br/><br/>
-                                        Worked closely with project managers to ensure timely delivery of user-friendly web interfaces.
                                     </p>
                                 </div>
                             </div>

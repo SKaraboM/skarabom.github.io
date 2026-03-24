@@ -23,6 +23,52 @@ const ProjectsComp = () => {
 
     const projects = [
         {
+            id: 2,
+            title: "C4 VisionDesk",
+            image: require("./img/Projects/mapselected.jpeg"),
+            description: "A Flask web application for monitoring, managing, and analyzing CCTV servers and cameras along with their live status, with interactive mapping, analytics, user management, and real-time updates.",
+            year: "2025",
+            features: [
+                "Central PostgreSQL database of CCTV camera details, across multiple company managed sites",
+                "Interactive map of CCTV camera locations",
+                "User management with role-based access control",
+                "Real-time CCTV infrastructure analytics and reporting (Online status and downtime tracking)",
+                "Easy access to camera details, which include IP Addresses, Login Passwords, Name, Make and Location",
+            ],
+            technologies: [
+                "Python (Flask)",
+                "HTML, CSS",
+                "Javascript",
+                "PostgreSQL",
+                "Flask-SocketIO",
+                "Nginx",
+                "Ubuntu Server",
+            ]
+        },
+        {
+            id: 4,
+            title: "AI CCTV Surveillance",
+            image: require("./img/Projects/cvBlackScreen.jpeg"),
+            description: "AI-Powered CCTV system for high-risk areas, warehouses and perimeter fences. Using advanced computer vision, it detects intrusions and suspicious activity in real time, enhancing control room monitering with smart alerts and analytics. Scalable and reliable.",
+            year: "2025",
+            features: [
+                "YOLO Object detection models reliably detects objects and movement in a scene",
+                "Real-time alerting and monitoring capabilities",
+                "Scalable architecture for high-demand environments",
+                "Seamless integration with existing CCTV security systems",
+                "Advanced analytics and reporting features",
+                "Customizable alerting and notification system"
+            ],
+            technologies: [
+                "Python", 
+                "OpenCV", 
+                "TensorFlow",
+                "Ultralytics YOLO",
+                "Roboflow",
+                "Axis Communications Infrastructure",
+            ]
+        },
+        {
             id: 3,
             title: "Visitor Check-In",
             image: require("./img/Projects/visiterReg.jpeg"),
@@ -67,52 +113,6 @@ const ProjectsComp = () => {
                 "AWS API Gateway",
                 "AWS Lambda",
                 "DynamoDB"
-            ]
-        },
-        {
-            id: 2,
-            title: "C4 VisionDesk",
-            image: require("./img/Projects/mapselected.jpeg"),
-            description: "A Flask web application for monitoring, managing, and analyzing CCTV servers and cameras along with their live status, with interactive mapping, analytics, user management, and real-time updates.",
-            year: "2025",
-            features: [
-                "Central PostgreSQL database of CCTV camera details, across multiple company managed sites",
-                "Interactive map of CCTV camera locations",
-                "User management with role-based access control",
-                "Real-time CCTV infrastructure analytics and reporting (Online status and downtime tracking)",
-                "Easy access to camera details, which include IP Addresses, Login Passwords, Name, Make and Location",
-            ],
-            technologies: [
-                "Python (Flask)",
-                "HTML, CSS",
-                "Javascript",
-                "PostgreSQL",
-                "Flask-SocketIO",
-                "Nginx",
-                "Ubuntu Server",
-            ]
-        },
-        {
-            id: 4,
-            title: "AI CCTV Surveillance",
-            image: require("./img/Projects/cvBlackScreen.jpeg"),
-            description: "AI-Powered CCTV system for high-risk areas, warehouses and perimeter fences. Using advanced computer vision, it detects intrusions and suspicious activity in real time, enhancing control room monitering with smart alerts and analytics. Scalable and reliable.",
-            year: "2025",
-            features: [
-                "YOLO Object detection models reliably detects objects and movement in a scene",
-                "Real-time alerting and monitoring capabilities",
-                "Scalable architecture for high-demand environments",
-                "Seamless integration with existing CCTV security systems",
-                "Advanced analytics and reporting features",
-                "Customizable alerting and notification system"
-            ],
-            technologies: [
-                "Python", 
-                "OpenCV", 
-                "TensorFlow",
-                "Ultralytics YOLO",
-                "Roboflow",
-                "Axis Communications Infrastructure",
             ]
         }
     ]

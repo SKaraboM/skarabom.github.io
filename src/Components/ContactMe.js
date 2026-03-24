@@ -5,7 +5,7 @@ const ContactMe = () => {
     const contactInfo = {
         phone: "+27 65 917 0186",
         email: "makgobask2002@gmail.com",
-        linkedin: "https://www.linkedin.com/in/karabo-makgoba-7004491b3/"
+        linkedin: "https://www.linkedin.com/in/solomon-makgoba-7004491b3/"
     };
 
     return (
