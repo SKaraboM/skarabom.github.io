@@ -129,14 +129,14 @@ const ProjectsComp = () => {
             <div className="hidden md:block relative">
                 <div className="flex gap-6 min-h-[600px] ">
                     {/* Left Side - Project Tabs */}
-                    <div className="w-1/3 space-y-3">
+                    <div className="w-1/3 space-y-2 max-h-[60dvh] overflow-y-auto">
                         {projects.map((project, idx) => (
                             <div
                                 key={project.id}
                                 onClick={() => setActiveProject(idx)}
                                 className={`cursor-pointer rounded-lg overflow-hidden transition-all duration-300 border-2 h-55 flex flex-col ${
                                     activeProject === idx
-                                        ? 'border-[#fca311] shadow-lg scale-105'
+                                        ? 'border-[#fca311] shadow-lg'
                                         : 'border-[#e5e5e5] hover:border-[#14213d] hover:shadow-md'
                                 } relative`}
                             >
@@ -159,7 +159,7 @@ const ProjectsComp = () => {
                                 <div className={`p-4 flex-1 flex flex-col transition-colors duration-300 ${
                                     activeProject === idx ? 'bg-[#fca311]' : 'bg-white'
                                 }`}>
-                                    <h3 className={`font-bold text-base mb-1 ${
+                                    <h3 className={`font-bold text-xs mb-1 ${
                                         activeProject === idx ? 'text-white' : 'text-[#14213d]'
                                     }`}>
                                         {project.title}
@@ -178,7 +178,7 @@ const ProjectsComp = () => {
                     <div className="w-2/3">
                         <div className="bg-white border-2 border-[#e5e5e5] rounded-lg overflow-hidden shadow-xl">
                             {/* Large Project Image */}
-                            <div className="relative h-80 overflow-hidden bg-[#14213d]">
+                            <div className="relative h-60 overflow-hidden bg-[#14213d]">
                                 <img 
                                     src={projects[activeProject].image} 
                                     alt={projects[activeProject].title}
@@ -189,10 +189,10 @@ const ProjectsComp = () => {
                                 {/* Title Overlay */}
                                 <div className="absolute bottom-0 left-0 right-0 p-6">
                                     <div className="flex items-center gap-3 mb-2">
-                                        <h2 className="text-3xl font-bold text-white">
+                                        <h2 className="text-2xl font-bold text-white">
                                             {projects[activeProject].title}
                                         </h2>
-                                        <span className="bg-[#fca311] text-white px-3 py-1 rounded-full text-sm font-bold">
+                                        <span className="bg-[#fca311] text-white px-3 py-1 rounded-full text-xs font-bold">
                                             {projects[activeProject].year}
                                         </span>
                                     </div>

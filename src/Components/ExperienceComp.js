@@ -25,9 +25,10 @@ const ExperienceComp = () => {
                                         <p className="text-white bg-[#fca311] px-2 py-1 rounded">02/2026 - Present</p>
                                     </div>
                                     <p className="text-gray-600 text-md">
-                                        • Drive digital transformation initiatives and automation projects.<br/>
-                                        • Design and implement technology solutions to improve business efficiency.<br/>
-                                        • Collaborate with stakeholders to identify digitalization opportunities.<br/>
+                                        I drive digital transformation by identifying and implementing solutions that 
+                                        streamline operations and enhance business performance. I partner across functions
+                                         to accelerate technology adoption, develop and present strategic digital initiatives,
+                                          and secure management buy-in and investment. I lead cross-functional projects that deliver measurable efficiency gains and operational synergies, while mentoring graduates and students to build digital capability and support ongoing innovation.
                                     </p>
                                 </div>
                             </div>
@@ -47,11 +48,11 @@ const ExperienceComp = () => {
                                         <p className="text-white bg-[#fca311] px-2 py-1 rounded">01/2024 - 01/2025</p>
                                     </div>
                                     <p className="text-gray-600 text-md">
-                                        • Identified and implemented innovative digital solutions to optimize daily operations and business processes.<br/>
-                                        • Collaborated across functions to drive technology adoption and present strategic digital initiatives.<br/>
-                                        • Developed and maintained web and mobile applications using modern frameworks and AWS cloud services.<br/>
-                                        • Contributed to AI integration within CCTV surveillance systems to enhance operational efficiency.<br/>
-                                        • Supported cross-functional teams in digitalization and automation projects.<br/>
+                                        Developed and deployed AI-based object detection models integrated into CCTV surveillance systems
+                                        to enhance risk detection and operational efficiency. Built cloud-enabled full-stack web applications
+                                        using AWS, automating and digitizing 30% of manual security processes. 
+                                        Collaborated cross-functionally with engineers and risk specialists to
+                                        streamline data workflows and contributed to security innovation initiatives, driving 100% of digital solutions of BMW Plant Rosslyn Security Department.
                                     </p>
                                 </div>
                             </div>
@@ -70,9 +71,12 @@ const ExperienceComp = () => {
                                         <p className="text-white bg-[#fca311] px-2 py-1 rounded">08/2023 - 12/2023</p>
                                     </div>
                                     <p className="text-gray-600 text-md">
-                                        • Taught Object-Oriented Programming (OOP) concepts using Python and C#.<br/>
-                                        • Assisted students with debugging, code optimization, and understanding key programming principles. <br/>
-                                        • Promoted software development best practices and effective problem-solving approaches.<br/>
+                                        As a DSW01B1 Tutor, I guided students in learning C# programming with a strong 
+                                        emphasis on Object-Oriented Programming (OOP) principles. Provided clear 
+                                        explanations, practical examples, and hands-on exercises, while answering questions, 
+                                        reviewing student work, and monitoring progress. Fostered a positive learning environment 
+                                        that encouraged critical thinking and continuously stayed up to date with modern C# 
+                                        development practices.
                                     </p>
                                 </div>
                             </div>
