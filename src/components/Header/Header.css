@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.container {
+  position: sticky;   /* Enables sticky behavior */
+  top: 0;             /* Tells it to stick exactly at the top of the viewport */
+  z-index: 9999; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  width:100%;
+  box-sizing: border-box;
+  /* box-shadow:0 10px 8px -8px rgba(0, 0, 0, 0.25); */
+}
+.cursive-text {
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  font-size: min(2.5rem, 6vw);
+  color:var(--text-h);
+  margin: 30px 10px;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 32px;
+  height: 32px;
+  margin: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index:999;
+}
+
+.burger-menu span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  background: #76323f;
+  transition: transform 0.25s ease, opacity 0.2s ease, background 0.2s ease;
+  transform-origin: center;
+}
+
+.burger-menu:hover span {
+  background: #565656;
+}
+
+.burger-menu.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.burger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu.open span{
+  background: white;
+}
+.burger-menu.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
+

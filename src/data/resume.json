@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-10-22",
+    "document_type": "Resume/CV"
+  },
+  "personal_information": {
+    "full_name": "Karabo Makgoba",
+    "professional_title": "Full-Stack Software Developer",
+    "contact": {
+      "email": "makgobask2002@gmail.com",
+      "phone": "+2765 9170186",
+      "linkedin": "https://linkedin.com"
+    },
+    "location": {
+      "city": "Pretoria",
+      "province": "Gauteng",
+      "country": "South Africa"
+    }
+  },
+  "professional_summary": "I am a Full-Stack Software Developer with 3 years of experience designing, developing, and deploying enterprise software solutions. Experienced across the full software development lifecycle. Strong background developing cloud-native applications using JavaScript, ReactJS, Node.js, and Amazon Web Services (AWS). Proven ability to build scalable systems that improve operational efficiency. Passionate about building maintainable software, solving complex engineering problems, and continuously improving application performance through modern software engineering practices.",
+  "technical_skills": {
+    "languages": ["Python", "JavaScript", "HTML5", "CSS3", "C#"],
+    "frontend_development": ["ReactJS", "Tailwind CSS"],
+    "backend_development": ["Node.JS", "REST APIs", "API Integration", "Flask"],
+    "cloud_technologies": ["Amazon Web Services (AWS)"],
+    "databases": ["PostgreSQL", "DynamoDB", "Oracle SQL"],
+    "development_tools": ["Git", "GitHub", "Docker", "Oracle Apex"],
+    "ai_technologies": ["OpenCV", "PyTorch", "YOLOv8", "Computer Vision"]
+  },
+  "professional_experience": [
+    {
+      "job_title": "Digital Solutions Engineer (Junior)",
+      "company": "AIH Group (Contracted to BMW Group South Africa)",
+      "location": "Pretoria",
+      "start_date": "2026-02",
+      "end_date": "Present",
+      "responsibilities": [
+        "Designed, developed, and deployed cloud-based business applications under the guidance of senior business stakeholders.",
+        "Collaborated directly with business stakeholders to analyze existing processes, gather functional requirements, and translate business needs into scalable software solutions.",
+        "Developed responsive web applications and integrated backend services with cloud-hosted databases and REST APIs.",
+        "Participated throughout the complete Software Development Life Cycle (SDLC) to gain exposure to planning, development, testing, deployment, and continuous improvement."
+      ],
+      "technologies_used": ["Python", "Flask", "JavaScript", "ReactJS", "Node.js", "AWS", "REST APIs", "PostgreSQL", "Git", "Power Platform", "Confluence"]
+    },
+    {
+      "job_title": "Graduate Software Engineer",
+      "company": "BMW Group South Africa",
+      "location": "Pretoria",
+      "start_date": "2024-02",
+      "end_date": "2026-01",
+      "responsibilities": [
+        "Designed and developed enterprise software solutions supporting operational processes across six BMW facilities.",
+        "Architected cloud-native applications using AWS serverless technologies, enabling scalable, secure, and highly available business systems.",
+        "Developed full-stack applications including React-based dashboards, backend services, and real-time reporting interfaces supporting daily operational activities.",
+        "Integrated Computer Vision functionality into CCTV infrastructure to automate manual surveillance processes.",
+        "Supported production deployments, application maintenance, issue investigation, debugging, and continuous software improvements."
+      ],
+      "technologies_used": ["Python", "Flask", "JavaScript", "ReactJS", "Node.js", "AWS", "REST APIs", "PostgreSQL", "Git", "Docker", "Power Platform", "Confluence", "Figma"]
+    },
+    {
+      "job_title": "Programming Tutor (C#)",
+      "company": "University of Johannesburg",
+      "location": "Johannesburg",
+      "start_date": "2023-07",
+      "end_date": "2023-12",
+      "responsibilities": [
+        "Tutored undergraduate Information Technology students in C# programming and Object-Oriented Programming concepts.",
+        "Assisted students with debugging software applications, algorithm design, object-oriented principles, recursion, and software development fundamentals.",
+        "Reviewed programming assignments and provided technical guidance to improve software design and coding practices."
+      ],
+      "technologies_used": ["C#", ".NET", "Visual Studio Community"]
+    }
+  ],
+  "education": [
+    {
+      "qualification": "Higher Certificate in Management Practice",
+      "institution": "Henley Business School",
+      "nqf_level": 5,
+      "start_date": "2024-04",
+      "end_date": "2025-04"
+    },
+    {
+      "qualification": "Advanced Diploma in Information Technology",
+      "institution": "University of Johannesburg",
+      "nqf_level": 7,
+      "start_date": "2023-02",
+      "end_date": "2023-11"
+    },
+    {
+      "qualification": "Diploma in Business Information Technology",
+      "institution": "University of Johannesburg",
+      "nqf_level": 6,
+      "start_date": "2020-02",
+      "end_date": "2022-11"
+    }
+  ],
+  "certifications": [
+    {
+      "title": "AWS Certified Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "date": "2024-11"
+    },
+    {
+      "title": "Practical GitHub Actions",
+      "issuer": "LinkedIn Learning",
+      "date": "2025-02"
+    }
+  ]
+}
