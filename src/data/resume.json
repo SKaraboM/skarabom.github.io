@@ -18,7 +18,7 @@
       "country": "South Africa"
     }
   },
-  "professional_summary": "I am a Full-Stack Software Developer with 3 years of experience designing, developing, and deploying enterprise software solutions. Experienced across the full software development lifecycle. Strong background developing cloud-native applications using JavaScript, ReactJS, Node.js, and Amazon Web Services (AWS). Proven ability to build scalable systems that improve operational efficiency. Passionate about building maintainable software, solving complex engineering problems, and continuously improving application performance through modern software engineering practices.",
+  "professional_summary": "I am a full-stack developer who spent the last 3 years turning complex problems into smooth, working software. My go-to tech stack is JavaScript, React, Node.js, and AWS, and I am comfortable taking a project all the way from a rough idea to a live cloud deployment. I love building clean, scalable systems that make life easier for the people using them. If a problem is tricky, I am all over it. I am always looking for ways to polish code, speed up performance, and learn modern tech practices along the way.",
   "technical_skills": {
     "languages": ["Python", "JavaScript", "HTML5", "CSS3", "C#"],
     "frontend_development": ["ReactJS", "Tailwind CSS"],
