@@ -10,7 +10,7 @@ export const About:React.FC = () => {
                 <img src={Me} className='me-image' width='2.5rem'/>
             </div>
             <div className='about'>
-                <h2>About Me</h2>
+                <h2>Welcome</h2>
                 <p>{resumeData.professional_summary}</p>
 
             </div>
