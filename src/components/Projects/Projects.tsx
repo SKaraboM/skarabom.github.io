@@ -1,5 +1,6 @@
 import { useState, type CSSProperties } from 'react'
 import './Projects.css'
+import projectsJson from '../../data/projects.json'
 
 type Project = {
   id: number
@@ -10,38 +11,7 @@ type Project = {
   technologies: string[]
 }
 
-const projects: Project[] = [
-  {
-    id: 1,
-    name: 'Aurora Studio',
-    category: 'Brand platform',
-    description:
-      'A boutique creative platform for artists and brands to showcase work, launch campaigns, and manage bookings in one place.',
-    coverPhoto:
-      'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80',
-    technologies: ['React', 'TypeScript', 'CSS', 'Figma'],
-  },
-  {
-    id: 2,
-    name: 'Northstar CRM',
-    category: 'Operations dashboard',
-    description:
-      'A client operations dashboard that turns fragmented sales data into clear pipelines, reporting, and follow-up automation.',
-    coverPhoto:
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
-    technologies: ['React', 'Node', 'Charts', 'REST API'],
-  },
-  {
-    id: 3,
-    name: 'Bloom Journal',
-    category: 'Wellbeing product',
-    description:
-      'An elegant journaling experience with mood tracking, curated prompts, and visual reflections to keep user habits meaningful.',
-    coverPhoto:
-      'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80',
-    technologies: ['Next.js', 'Tailwind', 'Supabase', 'UX Writing'],
-  },
-]
+const projects: Project[] = projectsJson
 
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   const [tilt, setTilt] = useState({ x: 50, y: 50, rx: 0, ry: 0 })

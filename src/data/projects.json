@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Aurora Studio",
+    "category": "Brand platform",
+    "description":"A boutique creative platform for artists and brands to showcase work, launch campaigns, and manage bookings in one place.",
+    "coverPhoto":
+     "",
+     "technologies": ["React", "TypeScript", "CSS", "Figma"]
+  },
+  {
+    "id": 2,
+    "name": "Northstar CRM",
+    "category": "Operations dashboard",
+    "description":"",
+    "coverPhoto":"",
+    "technologies": ["React", "Node", "Charts", "REST API"]
+  },
+  {
+    "id": 3,
+    "name": "Bloom Journal",
+    "category": "Wellbeing product",
+    "description":"",
+    "coverPhoto":"",
+    "technologies": ["Next.js", "Tailwind", "Supabase", "UX Writing"]
+  }
+]
