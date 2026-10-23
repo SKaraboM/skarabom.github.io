@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './Header.css'
-import Menu from './Menu'
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
@@ -9,7 +8,7 @@ export default function Header() {
     <>
     <div className="container">
       <div>
-        <h1 className='cursive-text'></h1>
+        <h1 className='cursive-text'>SK</h1>
       </div>
       <button
         type="button"
@@ -23,7 +22,14 @@ export default function Header() {
         <span />
       </button>
     </div>
-    {isOpen && <Menu/>}
+    {isOpen && 
+        <div className='menu-container'>
+            <ul className='menu-list'>
+                <li>Projects</li>
+                <li>Skills</li>
+                <li className='last-child'>Lets Connect</li>
+            </ul>
+        </div>}
     </>
   )
 }

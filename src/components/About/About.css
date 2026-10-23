@@ -4,36 +4,39 @@
     align-items: center;
     gap: 2rem;
     margin: 2rem auto;
-    width: min(80vw, 1100px);
+    width: 85vw;
 }
 
 .icon {
     flex: 0 0 auto;
-    background-color: var(--accent);
 }
 
 .icon img {
     display: block;
-    width: 260px;
+    width: 20rem;
     height: auto;
     max-width: 100%;
 }
 
 .about {
     flex: 1;
-    margin-top: 10vh;
 }
 
 .about h2 {
     margin-bottom: 0.75rem;
-    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    font-size: clamp(2rem, 4vw, 3rem);
 }
 
 .about p {
-    font-size: clamp(0.95rem, 1.4vw, 1.1rem);
+    font-family: "Asap Sharp", sans-serif;
+    font-size: 1rem;
     line-height: 1.6;
-}
 
+}
+.me-image{
+    height: 2.5rem;
+    width: 2rem;
+}
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
@@ -59,9 +62,10 @@
 
     .about h2 {
         font-size: 1.5rem;
+
     }
 
     .about p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }

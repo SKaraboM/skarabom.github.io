@@ -1,23 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 .container {
-  position: sticky;   /* Enables sticky behavior */
-  top: 0;             /* Tells it to stick exactly at the top of the viewport */
-  z-index: 9999; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: center;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
-  /* box-shadow:0 10px 8px -8px rgba(0, 0, 0, 0.25); */
+  background: rgba(215, 206, 199);
+  box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.25);
 }
 .cursive-text {
   font-family: "Great Vibes", cursive;
   font-weight: bold;
-  font-size: min(2.5rem, 6vw);
   color:var(--text-h);
-  margin: 30px 10px;
+  font-size: 18px;
+  margin: 0.6rem 2rem;
+  margin-left: 0.6rem;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 12% 8%;
+  border: 2px solid var(--text-h);
+  border-radius: 50%;
 }
 
 .burger-menu {
@@ -26,8 +35,8 @@
   justify-content: center;
   gap: 5px;
   width: 32px;
-  height: 32px;
-  margin: 20px;
+  height: 28px;
+  margin: 0 20px;
   background: transparent;
   border: none;
   padding: 0;
@@ -37,7 +46,7 @@
 
 .burger-menu span {
   display: block;
-  width: 100%;
+  width: 90%;
   height: 3px;
   border-radius: 2px;
   background: #76323f;
@@ -57,12 +66,66 @@
   opacity: 0;
 }
 .burger-menu.open span{
-  background: white;
+  background: #565656;
 }
 .burger-menu.open span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
 }
 
 
+.menu-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    background-color: var(--text-h);
+    width: min(10rem, 90vw);
+    max-width: 280px;
+    min-width: 180px;
+    height: 100vh;
+    min-height: 100vh;
+    margin-right: 0;
+    margin-left: auto;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    animation: fadeIn 0.4s ease-in forwards;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+  .menu-container {
+    width: 9rem;
+    min-width: 0;
+  }
+}
+.menu-list{
+    list-style: none;
+    margin: 0;
+    margin-top: 2rem;
+    padding: 0;
+    width: 100%;
+}
+.menu-list li{
+    margin: 1.2rem;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(202, 202, 202);
+    text-align: left;
+}
+.menu-list li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 

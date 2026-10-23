@@ -41,6 +41,7 @@ html {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  padding-top: 72px;
 }
 
 body {
